@@ -1,8 +1,12 @@
+/* --------------------------- Normalización --------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* --------------------------- Variables --------------------------- */
 
 :root {
     /* Colores */
@@ -21,16 +25,18 @@
     --fuente-tituloCard: 800 1.75rem "Open Sans", sans-serif;
     --fuente-textoCard: 400 .875rem "Open Sans", sans-serif;
     --fuente-textoDestacadoCard: 700 .875rem "Open Sans", sans-serif;
-    
+    --fuente-nombreEntrevista: 700 20px "Open Sans", sans-serif;
+    --fuente-textosComentario: 400 18px "Open Sans", sans-serif;
+
     /* Espaciados */
     --margen-seccion: 3.75rem;
-
-
 }
 
 body {
     background-color: var(--color-blanco);
 }
+
+/* --------------------------- Header --------------------------- */
 
 .header {
     width: 100%;
@@ -77,6 +83,8 @@ body {
     width: 25px;
     height: auto;
 }
+
+/* --------------------------- Nav --------------------------- */
 
 .nav {
     display: flex;
@@ -129,6 +137,8 @@ body {
 .main {
     margin: 0 120px;
 }
+
+/* --------------------------- Novedades --------------------------- */
 
 .hero {
     display: flex;
@@ -198,11 +208,191 @@ body {
     justify-content: center;
     align-items: center;
     gap: .75rem;
-
 }
 
-.novedad_secundaria img {
+.novedad_secundaria {
     width: 268px;
-    height: auto;
+    height: 268px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    color: #F3F3F3;
 }
+
+.novedad_secundaria::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.secundaria_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+}
+
+.secundaria_texto h2{
+    font: var(--fuente-tituloCard);
+}
+
+.secundaria_texto p {
+    font: var(--fuente-textoDestacadoCard);
+}
+
+.texto_datos {
+    display: flex;
+    gap:.5rem;
+}
+
+/* --------------------------- Comentadas --------------------------- */
+
+.comentadas {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: var(--margen-seccion);
+}
+
+.section_titulo {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    font: var(--fuente-tituloSeccion);
+}
+
+.comentada {
+    display: flex;
+    background-color: var(--color-negro);
+    color: #F3F3F3;
+}
+
+.mas_comentada {
+    min-width: 550px;
+    height: 450px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.mas_comentada::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.comentada_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+}
+
+.secundaria_texto h2{
+    font: var(--fuente-tituloCard);
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario_perfil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.comentario_perfil img {
+    width: 50px;
+    height: 50px;
+}
+
+.comenario_perfil h2 {
+    font: var(--fuente-nombreEntrevista);
+}
+
+.comentario p {
+    font: var(--fuente-textosComentario);
+}
+
+.comentadas_secundarias {
+    display: flex;
+    gap: .5rem;
+}
+
+.comentada_secundaria {
+    min-width: 365px;
+    height: 250px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.comentada_secundaria::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.comentada_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+
+    color: var(--color-blanco);
+}
+
+.comentada_texto h2{
+    font: var(--fuente-tituloCard);
+}
+
+.mostrar_comentarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar_comentarios img{
+    width: 30px;
+    height: 30px;
+}
+
+.mostrar_comentarios p {
+    font: var(--fuente-textosComentario);
+}
+
+/* --------------------------- valoradas --------------------------- */
 
