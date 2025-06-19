@@ -9,22 +9,27 @@
     --color-negro: #282828;
     --color-blanco: #F3F3F3;
     --color-acento:  #E64946;
+    --color-negro-gradient: linear-gradient(to top, #282828CC, #2828281A);
+
+    /* Bordes */
+    --border-base: 2px solid var(--color-negro);
+    --border-rojo: 2px solid var(--color-acento);
 
     /* Textos */
-    /* nombre-variable: weight size/line-height family */
-    --fuente-ejemplo: 400 1rem/1.5 "Roboto Condensed", sans-serif;
-    
     --fuente-tituloSeccion: 800 2.25rem "Open Sans", sans-serif;
     --fuente-nav: 700 1.25rem "Roboto Condensed", sans-serif;
     --fuente-tituloCard: 800 1.75rem "Open Sans", sans-serif;
     --fuente-textoCard: 400 .875rem "Open Sans", sans-serif;
     --fuente-textoDestacadoCard: 700 .875rem "Open Sans", sans-serif;
     
+    /* Espaciados */
+    --margen-seccion: 3.75rem;
 
-    /* Bordes */
-    --border-base: 2px solid var(--color-negro);
-    --border-rojo: 2px solid var(--color-acento);
 
+}
+
+body {
+    background-color: var(--color-blanco);
 }
 
 .header {
@@ -33,6 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 120px;
 
     background-color: var(--color-negro);
 }
@@ -76,7 +82,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 120px;
     background-color: var(--color-blanco);
     border-bottom: var(--border-rojo);
 }
@@ -94,8 +100,15 @@
 
 .tab a {
     text-decoration: none;
-    color: var(--color-negro);
     font: var(--fuente-nav);
+}
+
+.tab_active {
+    color: var(--color-acento);
+}
+
+.tab_unactive {
+    color: var(--color-negro);
 }
 
 .tab a:hover {
@@ -112,3 +125,84 @@
     border-top: none;
     border-bottom: none;
 }
+
+.main {
+    margin: 0 120px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: var(--margen-seccion);
+}
+
+.novedades_destacadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.novedad_destacada {
+    width: 550px;
+    height: 450px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    color: #F3F3F3;
+}
+
+.novedad_destacada::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.destacada_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+}
+
+.destacada_texto h2{
+    font: var(--fuente-tituloCard);
+}
+
+.destacada_texto p {
+    font: var(--fuente-textoDestacadoCard);
+}
+
+.texto_datos {
+    display: flex;
+    gap:.5rem;
+}
+
+.novedades_secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+
+}
+
+.novedad_secundaria img {
+    width: 268px;
+    height: auto;
+}
+
