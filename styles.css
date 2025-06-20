@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; Solo para verificaciones dev comentar al desplegar */
 }
 
 /* --------------------------- Variables --------------------------- */
@@ -321,7 +321,7 @@ body {
 }
 
 .mas_comentada {
-    min-width: 41.8125rem;
+    min-width: 641px;
     height: 20.4375rem;
     background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
     background-size: cover;
@@ -357,6 +357,7 @@ body {
 
 .comentario {
     width: 409px;
+    max-height: 327px;
     background-color: var(--color-negro);
     display: flex;
     flex-direction: column;
@@ -388,7 +389,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.6rem;
 }
 
 .comentada_secundaria {
@@ -450,3 +451,261 @@ body {
 }
 
 /* --------------------------- valoradas --------------------------- */
+
+.valoradas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--margen-seccion);
+    gap: 30px;
+}
+
+.valorada {
+    display: flex;
+    justify-content: center;
+    color: #F3F3F3;
+    gap: .5rem;
+}
+
+.mas_valorada {
+    min-width: 641px;
+    height: 327px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.mas_valorada::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.valorada_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+}
+
+.valorada_texto h2 {
+    font: var(--fuente-tituloCard);
+}
+
+.valoradas_secundarias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.valorada_secundaria {
+    min-width: 409px;
+    height: 150px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.valorada_secundaria::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.valorada_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+
+    color: var(--color-blanco);
+}
+
+.valorada_texto h2 {
+    font: var(--fuente-tituloCard);
+}
+
+.datos_valoradaSecundaria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------------------- Entrevistas --------------------------- */
+
+.entrevistas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--margen-seccion);
+    gap: 30px;
+}
+
+.entrevista {
+    display: flex;
+    justify-content: center;
+    color: #F3F3F3;
+}
+
+.entrevista_destacada {
+    min-width: 641px;
+    height: 20.4375rem;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.entrevista_destacada::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.entrevista_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+}
+
+.entrevista_texto h2 {
+    font: var(--fuente-tituloCard);
+}
+
+.bajada {
+    width: 409px;
+    max-height: 327px;
+    background-color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+}
+
+.bajada h2 {
+    font: var(--fuente-nombreEntrevista);
+}
+
+.bajada p {
+    font: var(--fuente-textosComentario);
+}
+
+.entrevista_perfil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.entrevista_perfil img {
+    width: 45px;
+    height: 45px;
+}
+
+.entrevista_perfil h2 {
+    font: var(--fuente-nombreEntrevista);
+}
+
+.entrevista_perfil p {
+    font: var(--fuente-textosComentario);
+}
+
+.datos_bajada {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos_bajada p {
+    font: var(--fuente-textosComentario);
+}
+
+.entrevistas_secundarias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.entrevista_secundaria {
+    min-width: 333px;
+    height: 230px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.entrevista_secundaria::before {
+    content: " ";
+    position: absolute;
+    background: var(--color-negro-gradient);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.entrevista_texto {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 2;
+
+    color: var(--color-blanco);
+}
+
+.entrevista_texto h2 {
+    font: var(--fuente-tituloCard);
+}
+
+.datos_entrevistaSecundaria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------------------- Footer --------------------------- */
+
+.footer {
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
