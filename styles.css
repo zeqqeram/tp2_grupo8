@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.875rem;
+    gap: 30px;
     margin-bottom: var(--margen-seccion);
 }
 
@@ -186,13 +186,21 @@ body {
 .novedad_destacada {
     width: 31.9375rem;
     height: 23.8125rem;
-    background-image: url("img/destacada1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 
     color: #F3F3F3;
+}
+
+.destacada1 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2022/04/mindhunter.jpg?resize=446%2C248&ssl=1");
+} 
+
+.destacada2 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/Jeremy-Allen-White-Bruce-Springsteen-Banner-1.jpg?resize=446%2C248&ssl=1");
+
 }
 
 .novedad_destacada::before {
@@ -204,6 +212,10 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+}
+
+.novedad_destacada:hover .texto_datos {
+    display: flex;
 }
 
 .destacada_texto {
@@ -221,8 +233,16 @@ body {
 
 .texto_datos {
     height: 50px;
-    display: flex;
+    display: none;
     align-items: center;
+    justify-content: space-between;
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
 }
 
 .texto_datos p {
@@ -231,6 +251,15 @@ body {
 
 .texto_datos span {
     font: var(--fuente-textoDestacadoCard);
+}
+
+.texto_datos h3 {
+    font: var(--fuente-textoDestacadoCard);
+}
+
+.texto_datos img {
+    width: 20px;
+    height: 20px;
 }
 
 .novedades_secundarias {
@@ -244,13 +273,44 @@ body {
 .novedad_secundaria {
     width: 15.125rem;
     height: 11.9375rem;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 
     color: #F3F3F3;
+}
+
+.novedad_secundaria1 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/MCU-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria2 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/07/Netflix.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria3 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria4 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/La-Pistola-Desnuda-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria5 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/08/David-Corenswet-Superman-Traje-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria6 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/03/BHQMVU4L5JA3FEYOIVOYMAE6ZA.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria7 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/10/Kierkan-Shipka-in-Totally-Killer-16.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria8 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1");
 }
 
 .novedad_secundaria::before {
@@ -262,6 +322,10 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+}
+
+.novedad_secundaria:hover .secundaria_textoDatos {
+    display: flex;
 }
 
 .secundaria_texto {
@@ -278,10 +342,23 @@ body {
     font: var(--fuente-tituloCardSecundaria);
 }
 
+.valores_secundarias {
+    display: flex;
+    flex-direction: column;
+}
+
+.valor_comentarios {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .secundaria_textoDatos {
     height: 20px;
-    display: flex;
+    display: none;
     align-items: center;
+    justify-content: space-between;
 }
 
 .secundaria_textoDatos p {
@@ -290,6 +367,15 @@ body {
 
 .secundaria_textoDatos span {
     font: var(--fuente-textoDestacadoCard);
+}
+
+.secundaria_textoDatos h3 {
+    font: var(--fuente-textoDestacadoCard);
+}
+
+.secundaria_textoDatos img {
+    width: 20px;
+    height: 20px;
 }
 
 /* --------------------------- Comentadas --------------------------- */
@@ -323,7 +409,7 @@ body {
 .mas_comentada {
     min-width: 641px;
     height: 20.4375rem;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-image: url("https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -395,11 +481,22 @@ body {
 .comentada_secundaria {
     min-width: 333px;
     height: 230px;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+}
+
+.comentada_secundaria1 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/01/Harry-Potter-1-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.comentada_secundaria2 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/09/Alien-Earth-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.comentada_secundaria3 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/02/Daredevil-Born-Again-Banner-1.jpg?resize=1200%2C720&ssl=1");
 }
 
 .comentada_secundaria::before {
@@ -463,13 +560,13 @@ body {
     display: flex;
     justify-content: center;
     color: #F3F3F3;
-    gap: .5rem;
+    gap: 30px;
 }
 
 .mas_valorada {
-    min-width: 641px;
+    width: 614px;
     height: 327px;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+    background-image: url("img/destacada1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -512,11 +609,18 @@ body {
 .valorada_secundaria {
     min-width: 409px;
     height: 150px;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+}
+
+.valorada_secundaria1 {
+        background-image: url("img/destacada2.png");
+}
+
+.valorada_secundaria2 {
+        background-image: url("img/destacada2.png");
 }
 
 .valorada_secundaria::before {
