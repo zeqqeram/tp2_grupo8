@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="img/lacosalogo.png" alt="Logo de La cosa cine">
+        <img class="logo" src="/img/lacosalogo.png" alt="Logo de La cosa cine">
         <div class="links">
             <div class="redes_container">
                 <a href="https://www.instagram.com/lacosacine/" class="icon ig" target="_blank" rel="noopener"
@@ -29,7 +29,7 @@
                     rel="noopener" aria-label="Youtube"></a>
             </div>
             <div class="perfil_container">
-                <img class="perfil" src="img/perfil.png" alt="Icono de perfil">
+                <img class="perfil" src="/img/perfil.png" alt="Icono de perfil">
                 <p>Log in</p>
             </div>
         </div>
@@ -37,364 +37,276 @@
 
     <nav class="nav">
         <ul class="tabs">
-            <li class="tab"><a class="tab_active" href="Inicio">Inicio</a></li>
+            <li class="tab"><a class="tab_active" href="index.html">Inicio</a></li>
             <li class="tab"><a class="tab_unactive" href="pages/peliculas/peliculas.html">Películas</a></li>
             <li class="tab"><a class="tab_unactive" href="Series">Series</a></li>
             <li class="tab"><a class="tab_unactive" href="Comics">Cómics</a></li>
             <li class="tab"><a class="tab_unactive" href="Videojuegos">Videojuegos</a></li>
         </ul>
         <div class="buscador">
-            <input type="search" id="buscador" placeholder="Buscar">
-            <img class="buscador_icono" src="img/buscar.png" alt="Icono de lupa" class="buscar">
+            <input type="text" id="buscador" placeholder="Buscar">
+            <img class="buscador_icono" src="/img/buscar.png" alt="Icono de lupa" class="buscar">
         </div>
     </nav>
 
     <main class="main">
-        <section class="hero">
-            <div class="novedades_destacadas">
-                <div class="novedad_destacada destacada1">
-                    <div class="destacada_texto">
-                        <h2>¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?</h2>
-                        <div class="texto_datos">
-                            <div class="valores">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <p>jun. 3 de 2025</p>
-                                <div class="valor_comentarios">
-                                    <h3>4.3</h3>
-                                    <img src="img/valor.png" alt="icono de valoración">
-                                </div>
-                                <div class="valor_comentarios">
-                                    <h3>24</h3>
-                                    <img src="img/comentario.png" alt="Icono de comentarios">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedad_destacada destacada2">
-                    <div class="destacada_texto">
-                        <h2>JEREMY ALLEN WHITE SE CONVIERTE EN BRUCE SPRINGSTEEN</h2>
-                        <div class="texto_datos">
-                            <div class="valores">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <p>jun. 3 de 2025</p>
-                                <div class="valor_comentarios">
-                                    <h3>4.3</h3>
-                                    <img src="img/valor.png" alt="icono de valoración">
-                                </div>
-                                <div class="valor_comentarios">
-                                    <h3>24</h3>
-                                    <img src="img/comentario.png" alt="Icono de comentarios">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="novedades_secundarias">
-                <div class="novedad_secundaria novedad_secundaria1">
-                    <div class="secundaria_texto">
-                        <h2>JAMES GUNN SOBRE LOS PROBLEMAS DE MARVEL STUDIOS</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
+        <div class="ocultable" id="contenido_original">
+            <section class="hero">
+                <div class="novedades_destacadas">
+                    <div class="novedad_destacada destacada1 card">
+                        <div class="destacada_texto">
+                            <h2>¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?</h2>
+                            <div class="texto_datos">
                                 <div class="valores">
+                                    <p>por <span>Maca Reynolds</span></p>
                                     <p>jun. 3 de 2025</p>
                                     <div class="valor_comentarios">
                                         <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
+                                        <img src="/img/valor.png" alt="icono de valoración">
                                     </div>
                                     <div class="valor_comentarios">
                                         <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
+                                        <img src="/img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="novedad_secundaria novedad_secundaria2">
-                    <div class="secundaria_texto">
-                        <h2>NETFLIX PREPARA OTRO REBOOT DE UN CLÁSICO</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
+                    <div class="novedad_destacada destacada2 card">
+                        <div class="destacada_texto">
+                            <h2>JEREMY ALLEN WHITE SE CONVIERTE EN BRUCE SPRINGSTEEN</h2>
+                            <div class="texto_datos">
                                 <div class="valores">
+                                    <p>por <span>Maca Reynolds</span></p>
                                     <p>jun. 3 de 2025</p>
                                     <div class="valor_comentarios">
                                         <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
+                                        <img src="/img/valor.png" alt="icono de valoración">
                                     </div>
                                     <div class="valor_comentarios">
                                         <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
+                                        <img src="/img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="novedad_secundaria novedad_secundaria3">
-                    <div class="secundaria_texto">
-                        <h2>THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
+                <div class="novedades_secundarias">
+                    <div class="novedad_secundaria novedad_secundaria1 card">
+                        <div class="secundaria_texto">
+                            <h2>JAMES GUNN SOBRE LOS PROBLEMAS DE MARVEL STUDIOS</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria2 card">
+                        <div class="secundaria_texto">
+                            <h2>NETFLIX PREPARA OTRO REBOOT DE UN CLÁSICO</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria3 card">
+                        <div class="secundaria_texto">
+                            <h2>THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria4 card">
+                        <div class="secundaria_texto">
+                            <h2>LIAM NEESON PROTAGONIZA LA PISTOLA DESNUDA</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria5 card">
+                        <div class="secundaria_texto">
+                            <h2>JAMES GUNN RESPONDE A LA CAMPAÑA ANTI-SUPERMAN</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria6 card">
+                        <div class="secundaria_texto">
+                            <h2>LOS 5 MEJORES FAN FILMS COMIQUEROS</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria7 card">
+                        <div class="secundaria_texto">
+                            <h2>SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO TRAILER</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novedad_secundaria novedad_secundaria8 card">
+                        <div class="secundaria_texto">
+                            <h2>DÍA DEL PADRE: 5 PELÍCULAS PARA CELEBRARLO</h2>
+                            <div class="texto_datos">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="novedad_secundaria novedad_secundaria4">
-                    <div class="secundaria_texto">
-                        <h2>LIAM NEESON PROTAGONIZA LA PISTOLA DESNUDA</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedad_secundaria novedad_secundaria5">
-                    <div class="secundaria_texto">
-                        <h2>JAMES GUNN RESPONDE A LA CAMPAÑA ANTI-SUPERMAN</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedad_secundaria novedad_secundaria6">
-                    <div class="secundaria_texto">
-                        <h2>LOS 5 MEJORES FAN FILMS COMIQUEROS</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedad_secundaria novedad_secundaria7">
-                    <div class="secundaria_texto">
-                        <h2>SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO TRAILER</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedad_secundaria novedad_secundaria8">
-                    <div class="secundaria_texto">
-                        <h2>DÍA DEL PADRE: 5 PELÍCULAS PARA CELEBRARLO</h2>
-                        <div class="texto_datos">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="comentadas">
-            <div class="section_titulo">
-                <h2>Más comentadas</h2>
-            </div>
-            <div class="comentada">
-                <div class="mas_comentada">
-                    <div class="comentada_texto">
-                        <h2>STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE ANIMADA</h2>
-                        <div class="texto_datosVisibles">
-                             <div class="valores">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <p>jun. 3 de 2025</p>
-                                <div class="valor_comentarios">
-                                    <h3>4.3</h3>
-                                    <img src="img/valor.png" alt="icono de valoración">
-                                </div>
-                                <div class="valor_comentarios">
-                                    <h3>24</h3>
-                                    <img src="img/comentario.png" alt="Icono de comentarios">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="comentadas">
+                <div class="section_titulo">
+                    <h2>Más comentadas</h2>
                 </div>
-                <div class="comentario">
-                    <div class="comentario_perfil">
-                        <img src="img/user1.png" alt="foto de usuario">
-                        <h2>JimeQuin</h2>
-                    </div>
-                    <p>"De todas maneras una serie animada es como que obvio que no será igual que la serie real, por
-                        eso
-                        decía que como van a tener más libertad de ponerle más cosas puede que le pongan criaturas que
-                        nada que ver con las que están en el Upside down, pero bueno veremos qué tal es cuando la
-                        estrenen."
-                    </p>
-                </div>
-            </div>
-            <div class="comentadas_secundarias">
-                <div class="comentada_secundaria comentada_secundaria1">
-                    <div class="comentada_textoSecundaria">
-                        <h2>HARRY POTTER: TODO LO QUE SABEMOS DE LA SERIE</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
+                <div class="comentada">
+                    <div class="mas_comentada card">
+                        <div class="comentada_texto">
+                            <h2>STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE ANIMADA</h2>
+                            <div class="texto_datosVisibles">
                                 <div class="valores">
+                                    <p>por <span>Maca Reynolds</span></p>
                                     <p>jun. 3 de 2025</p>
                                     <div class="valor_comentarios">
                                         <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
+                                        <img src="/img/valor.png" alt="icono de valoración">
                                     </div>
                                     <div class="valor_comentarios">
                                         <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
+                                        <img src="/img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="comentada_secundaria comentada_secundaria2">
-                    <div class="comentada_textoSecundaria">
-                        <h2>ALIEN: EARTH REVELA SU TRAILER COMPLETO</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="comentario">
+                        <div class="comentario_perfil">
+                            <img src="/img/user1.png" alt="foto de usuario">
+                            <h2>JimeQuin</h2>
                         </div>
+                        <p>"De todas maneras una serie animada es como que obvio que no será igual que la serie real,
+                            por
+                            eso
+                            decía que como van a tener más libertad de ponerle más cosas puede que le pongan criaturas
+                            que
+                            nada que ver con las que están en el Upside down, pero bueno veremos qué tal es cuando la
+                            estrenen."
+                        </p>
                     </div>
                 </div>
-                <div class="comentada_secundaria comentada_secundaria3">
-                    <div class="comentada_textoSecundaria">
-                        <h2>LOS PLANES ORIGINALES DE DAREDEVIL: BORN AGAIN</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="valoradas">
-            <div class="section_titulo">
-                <h2>Mejor valoradas</h2>
-            </div>
-            <div class="valorada">
-                <div class="mas_valorada">
-                    <div class="valorada_texto">
-                        <h2>THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <p>jun. 3 de 2025</p>
-                                <div class="valor_comentarios">
-                                    <h3>4.3</h3>
-                                    <img src="img/valor.png" alt="icono de valoración">
-                                </div>
-                                <div class="valor_comentarios">
-                                    <h3>24</h3>
-                                    <img src="img/comentario.png" alt="Icono de comentarios">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="valoradas_secundarias">
-                    <div class="valorada_secundaria valorada_secundaria1">
-                        <div class="valorada_textoSecundaria">
-                            <h2>RYAN REYNOLDS TRABAJA EN EL REGRESO DE DEADPOOL</h2>
+                <div class="comentadas_secundarias">
+                    <div class="comentada_secundaria comentada_secundaria1 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>HARRY POTTER: TODO LO QUE SABEMOS DE LA SERIE</h2>
                             <div class="texto_datosVisibles">
                                 <div class="valores_secundarias">
                                     <p>por <span>Maca Reynolds</span></p>
@@ -402,20 +314,20 @@
                                         <p>jun. 3 de 2025</p>
                                         <div class="valor_comentarios">
                                             <h3>4.3</h3>
-                                            <img src="img/valor.png" alt="icono de valoración">
+                                            <img src="/img/valor.png" alt="icono de valoración">
                                         </div>
                                         <div class="valor_comentarios">
                                             <h3>24</h3>
-                                            <img src="img/comentario.png" alt="Icono de comentarios">
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="valorada_secundaria valorada_secundaria2">
-                        <div class="valorada_textoSecundaria">
-                            <h2>LOS JUEGOS DEL HAMBRE: DETALLES DE SU NUEVA PRECUELA</h2>
+                    <div class="comentada_secundaria comentada_secundaria2 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>ALIEN: EARTH REVELA SU TRAILER COMPLETO</h2>
                             <div class="texto_datosVisibles">
                                 <div class="valores_secundarias">
                                     <p>por <span>Maca Reynolds</span></p>
@@ -423,11 +335,169 @@
                                         <p>jun. 3 de 2025</p>
                                         <div class="valor_comentarios">
                                             <h3>4.3</h3>
-                                            <img src="img/valor.png" alt="icono de valoración">
+                                            <img src="/img/valor.png" alt="icono de valoración">
                                         </div>
                                         <div class="valor_comentarios">
                                             <h3>24</h3>
-                                            <img src="img/comentario.png" alt="Icono de comentarios">
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentada_secundaria comentada_secundaria3 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>LOS PLANES ORIGINALES DE DAREDEVIL: BORN AGAIN</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="valoradas">
+                <div class="section_titulo">
+                    <h2>Mejor valoradas</h2>
+                </div>
+                <div class="valorada">
+                    <div class="mas_valorada card">
+                        <div class="valorada_texto">
+                            <h2>THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <p>jun. 3 de 2025</p>
+                                    <div class="valor_comentarios">
+                                        <h3>4.3</h3>
+                                        <img src="/img/valor.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="valor_comentarios">
+                                        <h3>24</h3>
+                                        <img src="/img/comentario.png" alt="Icono de comentarios">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="valoradas_secundarias">
+                        <div class="valorada_secundaria valorada_secundaria1 card">
+                            <div class="valorada_textoSecundaria">
+                                <h2>RYAN REYNOLDS TRABAJA EN EL REGRESO DE DEADPOOL</h2>
+                                <div class="texto_datosVisibles">
+                                    <div class="valores_secundarias">
+                                        <p>por <span>Maca Reynolds</span></p>
+                                        <div class="valores">
+                                            <p>jun. 3 de 2025</p>
+                                            <div class="valor_comentarios">
+                                                <h3>4.3</h3>
+                                                <img src="/img/valor.png" alt="icono de valoración">
+                                            </div>
+                                            <div class="valor_comentarios">
+                                                <h3>24</h3>
+                                                <img src="/img/comentario.png" alt="Icono de comentarios">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="valorada_secundaria valorada_secundaria2 card">
+                            <div class="valorada_textoSecundaria">
+                                <h2>LOS JUEGOS DEL HAMBRE: DETALLES DE SU NUEVA PRECUELA</h2>
+                                <div class="texto_datosVisibles">
+                                    <div class="valores_secundarias">
+                                        <p>por <span>Maca Reynolds</span></p>
+                                        <div class="valores">
+                                            <p>jun. 3 de 2025</p>
+                                            <div class="valor_comentarios">
+                                                <h3>4.3</h3>
+                                                <img src="/img/valor.png" alt="icono de valoración">
+                                            </div>
+                                            <div class="valor_comentarios">
+                                                <h3>24</h3>
+                                                <img src="/img/comentario.png" alt="Icono de comentarios">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="comentadas_secundarias">
+                    <div class="comentada_secundaria valorada_terciaria1 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>FIVE NIGHTS AT FREDDY’S ANTICIPA SU SECUELA</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentada_secundaria valorada_terciaria2 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE ANIMADA</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentada_secundaria valorada_terciaria3 card">
+                        <div class="comentada_textoSecundaria">
+                            <h2>SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO TRAILER</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
                                 </div>
@@ -436,187 +506,124 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="comentadas_secundarias">
-                <div class="comentada_secundaria valorada_terciaria1">
-                    <div class="comentada_textoSecundaria">
-                        <h2>FIVE NIGHTS AT FREDDY’S ANTICIPA SU SECUELA</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
+            </section>
+            <section class="entrevistas">
+                <div class="section_titulo">
+                    <h2>
+                        Entrevistas
+                    </h2>
+                </div>
+                <div class="entrevista">
+                    <div class="entrevista_destacada card">
+                        <div class="entrevista_texto">
+                            <h2>TELÉFONO NEGRO 2: TRAILER Y ENTREVISTA A SCOTT DERRICKSON</h2>
+                            <div class="texto_datosVisibles">
                                 <div class="valores">
+                                    <p>por <span>Maca Reynolds</span></p>
                                     <p>jun. 3 de 2025</p>
                                     <div class="valor_comentarios">
                                         <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
+                                        <img src="/img/valor.png" alt="icono de valoración">
                                     </div>
                                     <div class="valor_comentarios">
                                         <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
+                                        <img src="/img/comentario.png" alt="Icono de comentarios">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bajada">
+                        <div class="entrevista_perfil">
+                            <div class="entrevistador">
+                                <img src="/img/equipo1.png" alt="Icono de entrevistador">
+                                <p><span>Entrevistador/a:</span> Maca Reynolds</p>
+                            </div>
+                            <div class="datos_bajada">
+                                <img src="/img/video.png" alt="Icono que indica que la entrevista es en video">
+                                <p>Video</p>
+                                <img src="/img/tiempo.png"
+                                    alt="Icono que indica la duración de la entrevista o tiempo estimado de lectura">
+                                <p>1H30M</p>
+                            </div>
+                        </div>
+                        <p class="parrafo">Por el estreno del trailer de El Teléfono Negro 2, hablamos con su director
+                            sobre esta nueva
+                            entrega de horror.</br> en 2021, la película basada en el cuento homónimo de Joe Hill se
+                            situaba en una ciudad
+                            de Colorado, en los años 70, donde un enmascarado que se dedica a secuestrar niños,
+                            secuestra a
+                            Finney Shaw, encerrándolo en un sótano insonorizado.
+                        </p>
+                    </div>
+                </div>
+                <div class="entrevistas_secundarias">
+                    <div class="entrevista_secundaria entrevista_secundaria1 card">
+                        <div class="entrevista_textoSecundaria">
+                            <h2>DESTINO FINAL: LAZOS DE SANGRE - PARTE 1</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entrevista_secundaria entrevista_secundaria2 card">
+                        <div class="entrevista_textoSecundaria">
+                            <h2>DESTINO FINAL: LAZOS DE SANGRE - PARTE 2</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entrevista_secundaria entrevista_secundaria3 card">
+                        <div class="entrevista_textoSecundaria">
+                            <h2>CORAZÓN DELATOR: HABLAMOS CON BENJAMÍN VICUÑA Y JULIETA DÍAZ</h2>
+                            <div class="texto_datosVisibles">
+                                <div class="valores_secundarias">
+                                    <p>por <span>Maca Reynolds</span></p>
+                                    <div class="valores">
+                                        <p>jun. 3 de 2025</p>
+                                        <div class="valor_comentarios">
+                                            <h3>4.3</h3>
+                                            <img src="/img/valor.png" alt="icono de valoración">
+                                        </div>
+                                        <div class="valor_comentarios">
+                                            <h3>24</h3>
+                                            <img src="/img/comentario.png" alt="Icono de comentarios">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="comentada_secundaria valorada_terciaria2">
-                    <div class="comentada_textoSecundaria">
-                        <h2>STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE ANIMADA</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comentada_secundaria valorada_terciaria3">
-                    <div class="comentada_textoSecundaria">
-                        <h2>SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO TRAILER</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="entrevistas">
-            <div class="section_titulo">
-                <h2>
-                    Entrevistas
-                </h2>
-            </div>
-            <div class="entrevista">
-                <div class="entrevista_destacada">
-                    <div class="entrevista_texto">
-                        <h2>TELÉFONO NEGRO 2: TRAILER Y ENTREVISTA A SCOTT DERRICKSON</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <p>jun. 3 de 2025</p>
-                                <div class="valor_comentarios">
-                                    <h3>4.3</h3>
-                                    <img src="img/valor.png" alt="icono de valoración">
-                                </div>
-                                <div class="valor_comentarios">
-                                    <h3>24</h3>
-                                    <img src="img/comentario.png" alt="Icono de comentarios">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bajada">
-                    <div class="entrevista_perfil">
-                        <div class="entrevistador">
-                        <img src="img/equipo1.png" alt="Icono de entrevistador">
-                        <p><span>Entrevistador/a:</span> Maca Reynolds</p>
-                        </div>
-                        <div class="datos_bajada">
-                            <img src="img/video.png" alt="Icono que indica que la entrevista es en video">
-                            <p>Video</p>
-                            <img src="img/tiempo.png" alt="Icono que indica la duración de la entrevista o tiempo estimado de lectura">
-                            <p>1H30M</p>
-                        </div>
-                    </div>
-                    <p class="parrafo">Por el estreno del trailer de El Teléfono Negro 2, hablamos con su director sobre esta nueva
-                        entrega de horror.</br> en 2021, la película basada en el cuento homónimo de Joe Hill se situaba en una ciudad
-                        de Colorado, en los años 70, donde un enmascarado que se dedica a secuestrar niños, secuestra a
-                        Finney Shaw, encerrándolo en un sótano insonorizado.
-                    </p>
-                </div>
-            </div>
-            <div class="entrevistas_secundarias">
-                <div class="entrevista_secundaria entrevista_secundaria1">
-                    <div class="entrevista_textoSecundaria">
-                        <h2>DESTINO FINAL: LAZOS DE SANGRE - PARTE 1</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="entrevista_secundaria entrevista_secundaria2">
-                    <div class="entrevista_textoSecundaria">
-                        <h2>DESTINO FINAL: LAZOS DE SANGRE - PARTE 2</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="entrevista_secundaria entrevista_secundaria3">
-                    <div class="entrevista_textoSecundaria">
-                        <h2>CORAZÓN DELATOR: HABLAMOS CON BENJAMÍN VICUÑA Y JULIETA DÍAZ</h2>
-                        <div class="texto_datosVisibles">
-                            <div class="valores_secundarias">
-                                <p>por <span>Maca Reynolds</span></p>
-                                <div class="valores">
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
-                                        <img src="img/valor.png" alt="icono de valoración">
-                                    </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
-                                        <img src="img/comentario.png" alt="Icono de comentarios">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--
+            </section>
+            <!--
         <section class="videos">
             <div class="section_titulo">
                 <h2>Videos</h2>
@@ -631,6 +638,9 @@
   <div style="width: 300px; height: 300px;">Contenido grande</div>
 </div>
 -->
+        </div>
+        <div class="contenedor_filtrados" id="contenedor_filtrados">
+        </div>
     </main>
     <footer class="footer">
         <div class="contacto">
@@ -638,7 +648,7 @@
             <p>CONTACTANOS</p>
             <p>web@lacosacine.com</p>
         </div>
-        <img class="logo" src="img/lacosalogo.png" alt="">
+        <img class="logo" src="/img/lacosalogo.png" alt="">
     </footer>
     <script src="main.js"></script>
 </body>

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaCosaWEB - Películas</title>
 
-    <!-- Estilo -->
     <link rel="stylesheet" href="peliculas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +19,14 @@
         <img class="logo" src="/img/lacosalogo.png" alt="Logo de La cosa cine">
         <div class="links">
             <div class="redes_container">
-                <img class="redes" src="/img/ig.png" alt="Icono de red social 1">
-                <img class="redes" src="/img/fb.png" alt="Icono de red social 2">
-                <img class="redes" src="/img/x.png" alt="Icono de red social 3">
-                <img class="redes" src="/img/yt.png" alt="Icono de red social 4">
+                <a href="https://www.instagram.com/lacosacine/" class="icon ig" target="_blank" rel="noopener"
+                    aria-label="Instagram"></a>
+                <a href="https://www.facebook.com/lacosacine/" class="icon fb" target="_blank" rel="noopener"
+                    aria-label="Facebook"></a>
+                <a href="https://twitter.com/lacosacine" class="icon x" target="_blank" rel="noopener"
+                    aria-label="X"></a>
+                <a href="https://www.youtube.com/channel/UCxPKAwmb7sZKZ4bxm8Dk2Hg" class="icon yt" target="_blank"
+                    rel="noopener" aria-label="Youtube"></a>
             </div>
             <div class="perfil_container">
                 <img class="perfil" src="/img/perfil.png" alt="Icono de perfil">
@@ -34,13 +37,30 @@
 
     <nav class="nav">
         <ul class="tabs">
-            <li class="tab"><a href="/index.html">Inicio</a></li>
-            <li class="tab"><a href="Series">Series</a></li>
-            <li class="tab"><a href="Comics">Comics</a></li>
-            <li class="tab"><a href="Videojuegos">Videojuegos</a></li>
+            <li class="tab"><a class="tab_active" href="/index.html">Inicio</a></li>
+            <li class="tab"><a class="tab_unactive" href="/pages/peliculas/peliculas.html">Películas</a></li>
+            <li class="tab"><a class="tab_unactive" href="Series">Series</a></li>
+            <li class="tab"><a class="tab_unactive" href="Comics">Cómics</a></li>
+            <li class="tab"><a class="tab_unactive" href="Videojuegos">Videojuegos</a></li>
         </ul>
-        <input class="buscador" type="search" id="buscador" placeholder="Buscar">
+        <div class="buscador">
+            <input type="search" id="buscador" placeholder="Buscar">
+            <img class="buscador_icono" src="/img/buscar.png" alt="Icono de lupa" class="buscar">
+        </div>
     </nav>
-
+    <main class="main">
+        <h1>¡Proximamente conecto el server!</h1>
+        <div class="contenedor" id="contenedor"></div>
+    </main>
+        </main>
+    <footer class="footer">
+        <div class="contacto">
+            <p>AYUDA</p>
+            <p>CONTACTANOS</p>
+            <p>web@lacosacine.com</p>
+        </div>
+        <img class="logo" src="/img/lacosalogo.png" alt="">
+    </footer>
+    <script src="/main.js"></script>
 </body>
 </html>
