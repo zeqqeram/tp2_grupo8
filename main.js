@@ -1,4 +1,23 @@
+/* 
+// Nav fija debajo del header pero bien arriba en scroll
+
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.getElementById('nav');
+  const offset = 100; //Esto es la altura de nuestro header
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > offset) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+});
+*/
+
+
 // Función para marcar en pantalla los desbordes Round 2
+
 (function() {
   var slice = Array.prototype.slice;
 
@@ -39,6 +58,4 @@
       });
     });
 })();
-
-// Cards Dinamicas desde db
 
