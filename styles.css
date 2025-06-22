@@ -80,35 +80,35 @@ body {
 }
 
 .ig {
-    background-image: url(/img/ig.png);
+    background-image: url(./img/ig.png);
 }
 
 .ig:hover {
-    background-image: url(/img/ig-hover.png);
+    background-image: url(./img/ig-hover.png);
 }
 
 .fb {
-    background-image: url(/img/fb.png);
+    background-image: url(./img/fb.png);
 }
 
 .fb:hover {
-    background-image: url(/img/fb-hover.png);
+    background-image: url(./img/fb-hover.png);
 }
 
 .x {
-    background-image: url(/img/x.png);
+    background-image: url(./img/x.png);
 }
 
 .x:hover {
-    background-image: url(/img/x-hover.png);
+    background-image: url(./img/x-hover.png);
 }
 
 .yt {
-    background-image: url(/img/yt.png);
+    background-image: url(./img/yt.png);
 }
 
 .yt:hover {
-    background-image: url(/img/yt-hover.png);
+    background-image: url(./img/yt-hover.png);
 }
 
 .perfil_container {

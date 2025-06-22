@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="datos_comentadaSecundaria">
             <p>por <span>Maca Reynolds</span> - Jun. 15 del 2025</p>
             <div class="mostrar_comentarios">
-              <img src="/img/valor.png" alt="icono valoración">
+              <img src="./img/valor.png" alt="icono valoración">
               <p>${valor}</p>
-              <img src="/img/comentario.png" alt="icono comentarios">
+              <img src="./img/comentario.png" alt="icono comentarios">
               <p>${comentarios}</p>
             </div>
           </div>
