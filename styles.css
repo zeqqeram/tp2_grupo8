@@ -28,12 +28,14 @@
     --fuente-tituloSeccion: 800 36px "Roboto Condensed", sans-serif;
     --fuente-user: 700 20px "Open Sans", sans-serif;
     --fuente-comentario: 400 18px "Open Sans", sans-serif;
+    --fuente-comentarioDestacado: 700 18px "Open Sans", sans-serif;
     --fuente-datosDestacados: 600 14px "Open Sans", sans-serif;
     --fuente-datos: 400 14px "Open Sans", sans-serif;
     --fuente-datosNumericos: 800 14px "Open Sans", sans-serif;
+    --fuente-footer: 800 20px "Open Sans", sans-serif;
 
     /* Espaciados */
-    --margen-seccion: 3.75rem;
+    --margen-seccion: 108px;
 }
 
 body {
@@ -70,9 +72,43 @@ body {
     gap: .75rem;
 }
 
-.redes {
+.icon {
     width: 1.875rem;
     height: 1.875rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ig {
+    background-image: url(img/ig.png);
+}
+
+.ig:hover {
+    background-image: url(img/ig-hover.png);
+}
+
+.fb {
+    background-image: url(img/fb.png);
+}
+
+.fb:hover {
+    background-image: url(img/fb-hover.png);
+}
+
+.x {
+    background-image: url(img/x.png);
+}
+
+.x:hover {
+    background-image: url(img/x-hover.png);
+}
+
+.yt {
+    background-image: url(img/yt.png);
+}
+
+.yt:hover {
+    background-image: url(img/yt-hover.png);
 }
 
 .perfil_container {
@@ -98,7 +134,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 7.5rem;
-    margin-bottom: 2.375rem;
+    margin-bottom: 54px;
     position: sticky;
     top: 0;
     left: 0;
@@ -123,6 +159,11 @@ body {
 }
 
 .tab a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font: var(--fuente-nav);
 }
@@ -140,15 +181,15 @@ body {
 }
 
 .buscador {
-    width: 12.5rem;
-    height: 3.375rem;
+    width: 147px;
+    height: 54px;
     position: relative;
 }
 
 .buscador input {
     width: 100%;
     height: 100%;
-    padding: 1rem;
+    padding: 10px;
     background-color: var(--color-blanco);
     color: var(--color-negro);
     font: var(--fuente-nav);
@@ -160,10 +201,10 @@ body {
 
 .buscador_icono {
     position: absolute;
-    right: 1rem;
-    top: .5rem;
-    width: 1,875rem;
-    height: 1.875rem;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
     pointer-events: none;
 }
 
@@ -227,7 +268,9 @@ body {
 .destacada_texto {
     display: flex;
     flex-direction: column;
-    padding: 0 1.25rem;
+    justify-content: center;
+    padding: 5px 20px;
+    gap: 8px;
     position: absolute;
     bottom: .5rem;
     z-index: 2;
@@ -238,14 +281,12 @@ body {
 }
 
 .texto_datos {
-    height: 50px;
     display: none;
     align-items: center;
     justify-content: space-between;
 }
 
 .texto_datosVisibles {
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,7 +296,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .25rem;
+    gap: 10px;
 }
 
 .texto_datos p {
@@ -361,8 +402,8 @@ body {
 .secundaria_texto {
     display: flex;
     flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
+    padding: 2.5px 10px;
+    gap: 8px;
     position: absolute;
     bottom: .5rem;
     z-index: 2;
@@ -375,11 +416,11 @@ body {
 .valores_secundarias {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .valor_comentarios {
     display: flex;
-    gap: .25rem;
     align-items: center;
     justify-content: center;
 }
@@ -460,8 +501,8 @@ body {
 .comentada_texto {
     display: flex;
     flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
+    padding: 5px 20px;
+    gap: 8px;
     position: absolute;
     bottom: .5rem;
     z-index: 2;
@@ -762,6 +803,7 @@ body {
     background-color: var(--color-negro);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
     gap: 12px;
 }
@@ -774,11 +816,21 @@ body {
     font: var(--fuente-comentario);
 }
 
+.bajada span {
+    font: var(--fuente-comentarioDestacado);
+}
+
 .entrevista_perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.entrevistador {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .entrevista_perfil img {
@@ -788,7 +840,9 @@ body {
 
 .datos_bajada {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
 }
 
 .datos_bajada p {
@@ -797,6 +851,11 @@ body {
 
 .datos_bajada span {
     font: var(--fuente-datosDestacados);
+}
+
+.datos_bajada img {
+    width: 20px;
+    height:20px;
 }
 
 .entrevistas_secundarias {
@@ -873,8 +932,22 @@ body {
 .footer {
     background-color: var(--color-negro);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 176px;
+    margin-top: 83px;
+    padding: 0 40px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: var(--color-blanco);
+}
+
+.footer p {
+    font: var(--fuente-footer);
 }

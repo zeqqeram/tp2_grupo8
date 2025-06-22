@@ -1,35 +1,41 @@
-/* 
-// Nav fija debajo del header pero bien arriba en scroll
+
+// Función para reemplazar el desbordamiento de texto por puntos suspensivos
+// Resuelto con js para evitar incompatibilidades de webkit
+
+function suspensivos(selector, alturaMax) {
+  const parrafo = document.querySelector(selector);
+  if (!parrafo) return;
+
+  const textoOriginal = parrafo.textContent;
+  let texto = textoOriginal;
+  parrafo.textContent = texto;
+
+  while (parrafo.scrollHeight > alturaMax && texto.length > 0) {
+    texto = texto.slice(0, -1);
+    parrafo.textContent = texto.trim() + '...';
+  }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-  const nav = document.getElementById('nav');
-  const offset = 100; //Esto es la altura de nuestro header
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > offset) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
+  suspensivos('.parrafo', 190);
 });
-*/
+
 
 
 // Función para marcar en pantalla los desbordes Round 2
 
-(function() {
+(function () {
   var slice = Array.prototype.slice;
 
   function throttle(type, name, obj) {
     obj = obj || window;
     var running = false;
-    var func = function() {
+    var func = function () {
       if (running) {
         return;
       }
       running = true;
-      requestAnimationFrame(function() {
+      requestAnimationFrame(function () {
         obj.dispatchEvent(new CustomEvent(name));
         running = false;
       });
