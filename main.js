@@ -1,22 +1,27 @@
 // Función para reemplazar el desbordamiento de texto por puntos suspensivos
 // Resuelto con js para evitar incompatibilidades de webkit
 
-function suspensivos(selector, alturaMax) {
-  const parrafo = document.querySelector(selector);
-  if (!parrafo) return;
+function suspensivos(selector) { 
+  const elementos = document.querySelectorAll(selector);
+  if (!elementos.length) return;
 
-  const textoOriginal = parrafo.textContent;
-  let texto = textoOriginal;
-  parrafo.textContent = texto;
+  elementos.forEach(elemento => {
+    const alturaMax = parseInt(elemento.dataset.altura, 10); // lee data-altura del HTML
+    if (!alturaMax) return;
 
-  while (parrafo.scrollHeight > alturaMax && texto.length > 0) {
-    texto = texto.slice(0, -1);
-    parrafo.textContent = texto.trim() + '...';
-  }
+    const textoOriginal = elemento.textContent.trim();
+    let texto = textoOriginal;
+    elemento.textContent = texto;
+
+    while (elemento.scrollHeight > alturaMax && texto.length > 0) {
+      texto = texto.slice(0, -1).trim();
+      elemento.textContent = texto + '...';
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  suspensivos('.parrafo', 190);
+  suspensivos('.textoEditable');
 });
 
 //Sistema de filtrado para el buscador con elementos estáticos
