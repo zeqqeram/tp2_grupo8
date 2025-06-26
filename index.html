@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaCosaWEB</title>
+    <title>La Cosa Cine - Rediseño</title>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,13 @@
 </head>
 
 <body>
+
+    <!-- -------------------- Header -------------------- -->
+
     <header class="header">
         <img class="logo" src="./img/lacosalogo.png" alt="Logo de La cosa cine">
         <div class="links">
-            <div class="redes_container">
+            <div class="redes_contenedor">
                 <a href="https://www.instagram.com/lacosacine/" class="icon ig" target="_blank" rel="noopener"
                     aria-label="Instagram"></a>
                 <a href="https://www.facebook.com/lacosacine/" class="icon fb" target="_blank" rel="noopener"
@@ -28,43 +31,50 @@
                 <a href="https://www.youtube.com/channel/UCxPKAwmb7sZKZ4bxm8Dk2Hg" class="icon yt" target="_blank"
                     rel="noopener" aria-label="Youtube"></a>
             </div>
-            <div class="perfil_container">
+            <div class="perfil_contenedor">
                 <img class="perfil" src="./img/perfil.png" alt="Icono de perfil">
-                <p>LOGIN</p>
+                <p class="texto_blanco">LOGIN</p>
             </div>
         </div>
     </header>
 
+    <!---------------------- Nav ---------------------->
+
     <nav class="nav">
         <ul class="tabs">
-            <li class="tab"><a class="tab_unactive" href="pages/peliculas/peliculas.html">PELÍCULAS</a></li>
-            <li class="tab"><a class="tab_unactive" href="Series">SERIES</a></li>
-            <li class="tab"><a class="tab_unactive" href="Comics">CÓMICS</a></li>
-            <li class="tab"><a class="tab_unactive" href="Videojuegos">VIDEOJUEGOS</a></li>
+            <li class="tab"><a href="pages/peliculas/peliculas.html">PELÍCULAS</a></li>
+            <li class="tab"><a href="Series">SERIES</a></li>
+            <li class="tab"><a href="Comics">CÓMICS</a></li>
+            <li class="tab"><a href="Videojuegos">VIDEOJUEGOS</a></li>
         </ul>
         <div class="buscador">
-            <input class="buscador_input" type="text" id="buscador" placeholder="Buscar">
+            <input class="buscador_input" type="text" id="buscador" placeholder="BUSCAR">
             <img class="buscador_icono" src="./img/buscar.png" alt="Icono de lupa" class="buscar">
         </div>
     </nav>
 
+    <!---------------------- Main ---------------------->
+
     <main class="main">
-        <div class="ocultable" id="contenido_original">
-            <section class="hero">
-                <div class="novedades_destacadas">
+        <div id="contenido_original">
+
+            <!---------------------- Novedades ---------------------->
+
+            <section class="seccion">
+                <div class="destacadas novedades_destacadas">
                     <div class="novedad_destacada destacada1 card">
-                        <div class="destacada_texto">
-                            <h2>¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?</h2>
-                            <div class="texto_datos">
-                                <div class="valores">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
+                        <div class="textos destacada_textos">
+                            <h2 class="texto_blanco">¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?</h2>
+                            <div class="texto_datos oculto">
+                                <div class="datos">
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">4.3</h3>
                                         <img src="./img/valor.png" alt="icono de valoración">
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">24</h3>
                                         <img src="./img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
@@ -72,18 +82,18 @@
                         </div>
                     </div>
                     <div class="novedad_destacada destacada2 card">
-                        <div class="destacada_texto">
-                            <h2>JEREMY ALLEN WHITE SE CONVIERTE EN BRUCE SPRINGSTEEN</h2>
-                            <div class="texto_datos">
-                                <div class="valores">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
+                        <div class="textos destacada_textos">
+                            <h2 class="texto_blanco">JEREMY ALLEN WHITE SE CONVIERTE EN BRUCE SPRINGSTEEN</h2>
+                            <div class="texto_datos oculto">
+                                <div class="datos">
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">4.3</h3>
                                         <img src="./img/valor.png" alt="icono de valoración">
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">24</h3>
                                         <img src="./img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
@@ -93,20 +103,21 @@
                 </div>
                 <div class="novedades_secundarias">
                     <div class="novedad_secundaria novedad_secundaria1 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">JAMES GUNN SOBRE LOS PROBLEMAS DE MARVEL STUDIOS
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">JAMES GUNN SOBRE LOS PROBLEMAS DE
+                                MARVEL STUDIOS
                             </h2>
-                            <div class="texto_datos">
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -115,19 +126,20 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria2 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">NETFLIX PREPARA OTRO REBOOT DE UN CLÁSICO</h2>
-                            <div class="texto_datos">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">NETFLIX PREPARA OTRO REBOOT DE UN
+                                CLÁSICO</h2>
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -136,20 +148,21 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria3 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">THE SANDMAN REVELA EL TRAILER DE SU
+                                2DA TEMPORADA
                             </h2>
-                            <div class="texto_datos">
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -158,19 +171,20 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria4 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">LIAM NEESON PROTAGONIZA LA PISTOLA DESNUDA</h2>
-                            <div class="texto_datos">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">LIAM NEESON PROTAGONIZA LA PISTOLA
+                                DESNUDA</h2>
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -179,20 +193,21 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria5 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">JAMES GUNN RESPONDE A LA CAMPAÑA ANTI-SUPERMAN
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">JAMES GUNN RESPONDE A LA CAMPAÑA
+                                ANTI-SUPERMAN
                             </h2>
-                            <div class="texto_datos">
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -201,19 +216,20 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria6 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">LOS 5 MEJORES FAN FILMS COMIQUEROS</h2>
-                            <div class="texto_datos">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">LOS 5 MEJORES FAN FILMS COMIQUEROS
+                            </h2>
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -222,20 +238,22 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria7 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO
-                                TRAILER</h2>
-                            <div class="texto_datos">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">SÉ LO QUE HICIERON EL VERANO PASADO
+                                REVELA NUEVO
+                                TRAILER
+                            </h2>
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -244,19 +262,20 @@
                         </div>
                     </div>
                     <div class="novedad_secundaria novedad_secundaria8 card">
-                        <div class="secundaria_texto">
-                            <h2 class="textoEditable" data-altura="60">DÍA DEL PADRE: 5 PELÍCULAS PARA CELEBRARLO</h2>
-                            <div class="texto_datos">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">DÍA DEL PADRE: 5 PELÍCULAS PARA
+                                CELEBRARLO</h2>
+                            <div class="texto_datos oculto">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -267,25 +286,28 @@
                 </div>
             </section>
 
-            <section class="comentadas">
-                <div class="section_titulo">
-                    <h2>MÁS COMENTADAS</h2>
+            <!---------------------- Comentadas ---------------------->
+
+            <section class="seccion">
+                <div class="seccion_titulo">
+                    <h2 class="texto_blanco">MÁS COMENTADAS</h2>
                 </div>
-                <div class="comentada">
+                <div class="destacadas comentada">
                     <div class="mas_comentada card">
-                        <div class="comentada_texto">
-                            <h2 class="textoEditable" data-altura="60">STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE
+                        <div class="textos destacada_textos">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">STRANGER THINGS: PRIMEROS DETALLES
+                                DE LA SERIE
                                 ANIMADA</h2>
-                            <div class="texto_datosVisibles">
-                                <div class="valores">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
+                            <div class="texto_datos">
+                                <div class="datos">
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">4.3</h3>
                                         <img src="./img/valor.png" alt="icono de valoración">
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">24</h3>
                                         <img src="./img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
@@ -295,9 +317,10 @@
                     <div class="comentario">
                         <div class="comentario_perfil">
                             <img src="./img/user1.png" alt="foto de usuario">
-                            <h2>JimeQuin</h2>
+                            <h2 class="texto_blanco">JimeQuin</h2>
                         </div>
-                        <p>"De todas maneras una serie animada es como que obvio que no será igual que la serie real,
+                        <p class="texto_blanco textoEditable" data-altura="160">"De todas maneras una serie animada es
+                            como que obvio que no será igual que la serie real,
                             por
                             eso
                             decía que como van a tener más libertad de ponerle más cosas puede que le pongan criaturas
@@ -309,20 +332,21 @@
                 </div>
                 <div class="comentadas_secundarias">
                     <div class="comentada_secundaria comentada_secundaria1 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">HARRY POTTER: TODO LO QUE SABEMOS DE LA SERIE
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">HARRY POTTER: TODO LO QUE SABEMOS DE
+                                LA SERIE
                             </h2>
-                            <div class="texto_datosVisibles">
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -331,19 +355,20 @@
                         </div>
                     </div>
                     <div class="comentada_secundaria comentada_secundaria2 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">ALIEN: EARTH REVELA SU TRAILER COMPLETO</h2>
-                            <div class="texto_datosVisibles">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">ALIEN: EARTH REVELA SU TRAILER
+                                COMPLETO</h2>
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -352,20 +377,21 @@
                         </div>
                     </div>
                     <div class="comentada_secundaria comentada_secundaria3 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">LOS PLANES ORIGINALES DE DAREDEVIL: BORN AGAIN
+                        <div class=" textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">LOS PLANES ORIGINALES DE DAREDEVIL:
+                                BORN AGAIN
                             </h2>
-                            <div class="texto_datosVisibles">
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -376,25 +402,29 @@
                 </div>
             </section>
 
-            <section class="valoradas">
-                <div class="section_titulo">
-                    <h2>MEJOR VALORAS</h2>
+            <!---------------------- Valoradas ---------------------->
+
+
+            <section class="seccion">
+                <div class="seccion_titulo">
+                    <h2 class="texto_blanco">MEJOR VALORAS</h2>
                 </div>
-                <div class="valorada">
+                <div class="destacadas valorada_destacada">
                     <div class="mas_valorada card">
-                        <div class="valorada_texto">
-                            <h2 class="textoEditable" data-altura="60">THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA
+                        <div class="textos destacada_textos">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">THE SANDMAN REVELA EL TRAILER DE SU
+                                2DA TEMPORADA
                             </h2>
-                            <div class="texto_datosVisibles">
-                                <div class="valores">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
+                            <div class="texto_datos">
+                                <div class="datos">
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">4.3</h3>
                                         <img src="./img/valor.png" alt="icono de valoración">
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">24</h3>
                                         <img src="./img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
@@ -403,20 +433,21 @@
                     </div>
                     <div class="valoradas_secundarias">
                         <div class="valorada_secundaria valorada_secundaria1 card">
-                            <div class="valorada_textoSecundaria">
-                                <h2 class="textoEditable" data-altura="60">RYAN REYNOLDS TRABAJA EN EL REGRESO DE
+                            <div class="textos secundaria_texto">
+                                <h2 class="texto_blanco textoEditable" data-altura="60">RYAN REYNOLDS TRABAJA EN EL
+                                    REGRESO DE
                                     DEADPOOL</h2>
-                                <div class="texto_datosVisibles">
+                                <div class="texto_datos">
                                     <div class="valores_secundarias">
-                                        <p>por <span>Maca Reynolds</span></p>
-                                        <div class="valores">
-                                            <p>jun. 3 de 2025</p>
-                                            <div class="valor_comentarios">
-                                                <h3>4.3</h3>
+                                        <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                        <div class="datos">
+                                            <p class="texto_blanco">jun. 3 de 2025</p>
+                                            <div class="datos_valor-comentario">
+                                                <h3 class="texto_blanco">4.3</h3>
                                                 <img src="./img/valor.png" alt="icono de valoración">
                                             </div>
-                                            <div class="valor_comentarios">
-                                                <h3>24</h3>
+                                            <div class="datos_valor-comentario">
+                                                <h3 class="texto_blanco">24</h3>
                                                 <img src="./img/comentario.png" alt="Icono de comentarios">
                                             </div>
                                         </div>
@@ -425,20 +456,21 @@
                             </div>
                         </div>
                         <div class="valorada_secundaria valorada_secundaria2 card">
-                            <div class="valorada_textoSecundaria">
-                                <h2 class="textoEditable" data-altura="60">LOS JUEGOS DEL HAMBRE: DETALLES DE SU NUEVA
+                            <div class="textos secundaria_texto">
+                                <h2 class="texto_blanco textoEditable" data-altura="60">LOS JUEGOS DEL HAMBRE: DETALLES
+                                    DE SU NUEVA
                                     PRECUELA</h2>
-                                <div class="texto_datosVisibles">
+                                <div class="texto_datos">
                                     <div class="valores_secundarias">
-                                        <p>por <span>Maca Reynolds</span></p>
-                                        <div class="valores">
-                                            <p>jun. 3 de 2025</p>
-                                            <div class="valor_comentarios">
-                                                <h3>4.3</h3>
+                                        <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                        <div class="datos">
+                                            <p class="texto_blanco">jun. 3 de 2025</p>
+                                            <div class="datos_valor-comentario">
+                                                <h3 class="texto_blanco">4.3</h3>
                                                 <img src="./img/valor.png" alt="icono de valoración">
                                             </div>
-                                            <div class="valor_comentarios">
-                                                <h3>24</h3>
+                                            <div class="datos_valor-comentario">
+                                                <h3 class="texto_blanco">24</h3>
                                                 <img src="./img/comentario.png" alt="Icono de comentarios">
                                             </div>
                                         </div>
@@ -447,23 +479,23 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="comentadas_secundarias">
                     <div class="comentada_secundaria valorada_terciaria1 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">FIVE NIGHTS AT FREDDY'S ANTICIPA SU SECUELA</h2>
-                            <div class="texto_datosVisibles">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">FIVE NIGHTS AT FREDDY'S ANTICIPA SU
+                                SECUELA</h2>
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -472,20 +504,21 @@
                         </div>
                     </div>
                     <div class="comentada_secundaria valorada_terciaria2 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">STRANGER THINGS: PRIMEROS DETALLES
+                                DE LA SERIE
                                 ANIMADA</h2>
-                            <div class="texto_datosVisibles">
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -494,20 +527,21 @@
                         </div>
                     </div>
                     <div class="comentada_secundaria valorada_terciaria3 card">
-                        <div class="comentada_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">SÉ LO QUE HICIERON EL VERANO PASADO
+                                REVELA NUEVO
                                 TRAILER</h2>
-                            <div class="texto_datosVisibles">
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -516,29 +550,33 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-            <section class="entrevistas">
-                <div class="section_titulo">
-                    <h2>
+
+            <!---------------------- Entrevistas ---------------------->
+
+
+            <section class="seccion">
+                <div class="seccion_titulo">
+                    <h2 class="texto_blanco">
                         ENTREVISTAS
                     </h2>
                 </div>
-                <div class="entrevista">
+                <div class="destacadas entrevista">
                     <div class="entrevista_destacada card">
-                        <div class="entrevista_texto">
-                            <h2 class="textoEditable" data-altura="60">TELÉFONO NEGRO 2: TRAILER Y ENTREVISTA A SCOTT
+                        <div class="textos destacada_textos">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">TELÉFONO NEGRO 2: TRAILER Y
+                                ENTREVISTA A SCOTT
                                 DERRICKSON</h2>
-                            <div class="texto_datosVisibles">
-                                <div class="valores">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <p>jun. 3 de 2025</p>
-                                    <div class="valor_comentarios">
-                                        <h3>4.3</h3>
+                            <div class="texto_datos">
+                                <div class="datos">
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">4.3</h3>
                                         <img src="./img/valor.png" alt="icono de valoración">
                                     </div>
-                                    <div class="valor_comentarios">
-                                        <h3>24</h3>
+                                    <div class="datos_valor-comentario">
+                                        <h3 class="texto_blanco">24</h3>
                                         <img src="./img/comentario.png" alt="Icono de comentarios">
                                     </div>
                                 </div>
@@ -549,17 +587,18 @@
                         <div class="entrevista_perfil">
                             <div class="entrevistador">
                                 <img src="./img/equipo1.png" alt="Icono de entrevistador">
-                                <p><span>Entrevistador/a:</span> Maca Reynolds</p>
+                                <p class="texto_blanco"><span>Entrevistador/a:</span> Maca Reynolds</p>
                             </div>
                             <div class="datos_bajada">
                                 <img src="./img/video.png" alt="Icono que indica que la entrevista es en video">
-                                <p>Video</p>
+                                <p class="texto_blanco">Video</p>
                                 <img src="./img/tiempo.png"
                                     alt="Icono que indica la duración de la entrevista o tiempo estimado de lectura">
-                                <p>1H30M</p>
+                                <p class="texto_blanco">1H30M</p>
                             </div>
                         </div>
-                        <p class="textoEditable" data-altura="160">Por el estreno del trailer de El Teléfono Negro 2,
+                        <p class="texto_blanco textoEditable" data-altura="160">Por el estreno del trailer de El
+                            Teléfono Negro 2,
                             hablamos con su director sobre esta nueva entrega de horror.</br> en 2021, la película
                             basada en el cuento homónimo de Joe Hill se situaba en una ciudad de Colorado, en los años
                             70, donde un enmascarado que se dedica a secuestrar niños, secuestra a Finney Shaw,
@@ -569,19 +608,20 @@
                 </div>
                 <div class="entrevistas_secundarias">
                     <div class="entrevista_secundaria entrevista_secundaria1 card">
-                        <div class="entrevista_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">DESTINO FINAL: LAZOS DE SANGRE - PARTE 1</h2>
-                            <div class="texto_datosVisibles">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">DESTINO FINAL: LAZOS DE SANGRE -
+                                PARTE 1</h2>
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -590,19 +630,20 @@
                         </div>
                     </div>
                     <div class="entrevista_secundaria entrevista_secundaria2 card">
-                        <div class="entrevista_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">DESTINO FINAL: LAZOS DE SANGRE - PARTE 2</h2>
-                            <div class="texto_datosVisibles">
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">DESTINO FINAL: LAZOS DE SANGRE -
+                                PARTE 2</h2>
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -611,20 +652,21 @@
                         </div>
                     </div>
                     <div class="entrevista_secundaria entrevista_secundaria3 card">
-                        <div class="entrevista_textoSecundaria">
-                            <h2 class="textoEditable" data-altura="60">CORAZÓN DELATOR: HABLAMOS CON BENJAMÍN VICUÑA Y
+                        <div class="textos secundaria_texto">
+                            <h2 class="texto_blanco textoEditable" data-altura="60">CORAZÓN DELATOR: HABLAMOS CON
+                                BENJAMÍN VICUÑA Y
                                 JULIETA DÍAZ</h2>
-                            <div class="texto_datosVisibles">
+                            <div class="texto_datos">
                                 <div class="valores_secundarias">
-                                    <p>por <span>Maca Reynolds</span></p>
-                                    <div class="valores">
-                                        <p>jun. 3 de 2025</p>
-                                        <div class="valor_comentarios">
-                                            <h3>4.3</h3>
+                                    <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                    <div class="datos">
+                                        <p class="texto_blanco">jun. 3 de 2025</p>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">4.3</h3>
                                             <img src="./img/valor.png" alt="icono de valoración">
                                         </div>
-                                        <div class="valor_comentarios">
-                                            <h3>24</h3>
+                                        <div class="datos_valor-comentario">
+                                            <h3 class="texto_blanco">24</h3>
                                             <img src="./img/comentario.png" alt="Icono de comentarios">
                                         </div>
                                     </div>
@@ -634,34 +676,28 @@
                     </div>
                 </div>
             </section>
-            <!--
-        <section class="videos">
-            <div class="section_titulo">
-                <h2>Videos</h2>
-            </div>
-            <div class="carrusel_videos">
-                <img src="" alt="miniatura del video">
-                <img src="" alt="miniatura del video">
-                <img src="" alt="miniatura del video">
-            </div>
-        </section>
-    <div style="width: 100px; height: 100px; overflow: auto;">
-  <div style="width: 300px; height: 300px;">Contenido grande</div>
-</div>
--->
+
+            <!---------------------- Contenedor de elementos filtrados ---------------------->
+
         </div>
-        <div class="contenedor_filtrados" id="contenedor_filtrados">
-        </div>
+        <div class="contenedor_filtrados" id="contenedor_filtrados"></div>
     </main>
+
+    <!---------------------- Footer ---------------------->
+
     <footer class="footer">
         <div class="contacto">
-            <p>AYUDA</p>
-            <p>CONTACTANOS</p>
-            <p>web@lacosacine.com</p>
+            <p class="texto_blanco">AYUDA</p>
+            <p class="texto_blanco">CONTACTANOS</p>
+            <p class="texto_blanco">web@lacosacine.com</p>
         </div>
         <img class="logo" src="./img/lacosalogo.png" alt="">
     </footer>
+
+    <!-- -------------------- Conexión a Javascript -------------------- -->
+
     <script src="main.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-/* --------------------------- Normalización --------------------------- */
+/*--------------------------- Normalización ---------------------------*/
 
 * {
     margin: 0;
@@ -7,51 +7,41 @@
     /* outline: 1px solid blue; Solo para verificaciones dev comentar al desplegar */
 }
 
-/* --------------------------- Variables --------------------------- */
+/*--------------------------- Variables ---------------------------*/
 
 :root {
     /* Colores */
     --color-negro: #282828;
     --color-blanco: #F3F3F3;
     --color-acento: #E64946;
-    --color-negro-gradient: linear-gradient(to top, #282828D9, #2828281A);
+    --color-negro-gradient: linear-gradient(to top, #282828D9, #2828281a);
 
     /* Bordes */
     --border-base: 2px solid var(--color-negro);
     --border-rojo: 2px solid var(--color-acento);
 
     /* Textos */
-    --fuente-logIn: 700 13px "Roboto Condensed", sans-serif;
-    --fuente-nav: 700 20px "Roboto Condensed", sans-serif;
-    --fuente-tituloDestacada: 800 28px "Open Sans", sans-serif;
-    --fuente-tituloSecundarias: 800 18px "Open Sans", sans-serif;
-    --fuente-tituloSeccion: 800 36px "Roboto Condensed", sans-serif;
-    --fuente-user: 700 20px "Open Sans", sans-serif;
-    --fuente-comentario: 400 18px "Open Sans", sans-serif;
-    --fuente-comentarioDestacado: 700 18px "Open Sans", sans-serif;
-    --fuente-datosDestacados: 600 14px "Open Sans", sans-serif;
-    --fuente-datos: 400 14px "Open Sans", sans-serif;
-    --fuente-datosNumericos: 800 14px "Open Sans", sans-serif;
-    --fuente-footer: 800 20px "Open Sans", sans-serif;
+    --fuente-logIn: 700 .8125rem "Roboto Condensed", sans-serif;
+    --fuente-nav: 700 1.25rem "Roboto Condensed", sans-serif;
+    --fuente-tituloDestacada: 800 1.75rem "Open Sans", sans-serif;
+    --fuente-tituloSecundarias: 800 1.125rem "Open Sans", sans-serif;
+    --fuente-tituloSeccion: 800 2.25rem "Roboto Condensed", sans-serif;
+    --fuente-user: 700 1.25rem "Open Sans", sans-serif;
+    --fuente-comentario: 400 1.125rem "Open Sans", sans-serif;
+    --fuente-comentarioDestacado: 700 1.125rem "Open Sans", sans-serif;
+    --fuente-datosDestacados: 600 .875rem "Open Sans", sans-serif;
+    --fuente-datos: 400 .875rem "Open Sans", sans-serif;
+    --fuente-datosNumericos: 800 .875rem "Open Sans", sans-serif;
+    --fuente-footer: 800 1.25rem "Open Sans", sans-serif;
 
     /* Espaciados */
-    --margen-seccion: 108px;
+    --margen-seccion: 6.75rem;
 }
+
+/*--------------------------- Depurado ---------------------------*/
 
 body {
     background-color: var(--color-blanco);
-}
-
-/* --------------------------- Header --------------------------- */
-
-.header {
-    width: 100%;
-    height: 6.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7.5rem;
-    background-color: var(--color-negro);
 }
 
 .logo {
@@ -59,6 +49,20 @@ body {
     height: 4.6875rem;
 }
 
+.header, .footer, .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------------------- Header ---------------------------*/
+.header {
+    height: 6.25rem;
+    padding: 0 7.5rem;
+    background-color: var(--color-negro);
+}
+/*--------------------------- RRSS ---------------------------*/
 .links {
     display: flex;
     justify-content: center;
@@ -66,9 +70,8 @@ body {
     gap: 5rem;
 }
 
-.redes_container {
+.redes_contenedor {
     display: flex;
-    justify-content: space-around;
     gap: .75rem;
 }
 
@@ -111,12 +114,11 @@ body {
     background-image: url(./img/yt-hover.png);
 }
 
-.perfil_container {
+.perfil_contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--color-blanco);
     font: var(--fuente-logIn);
 }
 
@@ -126,15 +128,10 @@ body {
 }
 
 /* --------------------------- Nav --------------------------- */
-
 .nav {
-    width: 100%;
     height: 3.375rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 7.5rem;
-    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -166,14 +163,11 @@ body {
     align-items: center;
     text-decoration: none;
     font: var(--fuente-nav);
+    color: var(--color-negro);
 }
 
 .tab_active {
     color: var(--color-acento);
-}
-
-.tab_unactive {
-    color: var(--color-negro);
 }
 
 .tab a:hover {
@@ -181,17 +175,16 @@ body {
 }
 
 .buscador {
-    width: 147px;
-    height: 54px;
+    width: 9.1875rem;
+    height: 3.375;
     position: relative;
 }
 
 .buscador_input {
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: .625rem;
     background-color: var(--color-blanco);
-    color: var(--color-negro);
     font: var(--fuente-nav);
     border-left: var(--border-base);
     border-right: var(--border-base);
@@ -201,298 +194,65 @@ body {
 
 .buscador_input::placeholder{
     color: var(--color-negro);
-
 }
 
 .buscador_icono {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 35px;
-    height: 35px;
+    right: .625rem;
+    bottom: .3125rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
     pointer-events: none;
 }
 
 .main {
-    margin: 0 120px;
+    margin: 0 7.5rem;
 }
 
-/* --------------------------- Novedades --------------------------- */
-
-.hero {
+.seccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
     margin-bottom: var(--margen-seccion);
 }
 
-.novedades_destacadas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6875rem;
-}
+.seccion_titulo {
 
-.novedad_destacada {
-    width: 31.9375rem;
-    height: 23.8125rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-
-    color: #F3F3F3;
-}
-
-.destacada1 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2022/04/mindhunter.jpg?resize=446%2C248&ssl=1");
-} 
-
-.destacada2 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/Jeremy-Allen-White-Bruce-Springsteen-Banner-1.jpg?resize=446%2C248&ssl=1");
-
-}
-
-.novedad_destacada::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.novedad_destacada:hover .texto_datos {
-    display: flex;
-}
-
-.destacada_texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px 20px;
-    gap: 8px;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-}
-
-.destacada_texto h2 {
-    font: var(--fuente-tituloDestacada);
-}
-
-.texto_datos {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.texto_datosVisibles {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.valores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.texto_datos p {
-    font: var(--fuente-datos);
-}
-
-.texto_datosVisibles p {
-    font: var(--fuente-datos);
-}
-
-.texto_datos span {
-    font: var(--fuente-datosDestacados);
-}
-
-.texto_datosVisibles span {
-    font: var(--fuente-datosDestacados);
-}
-
-.texto_datos .texto_datosVisibles h3 {
-    font: var(--fuente-datosNumericos);
-}
-
-.texto_datosVisibles h3 {
-    font: var(--fuente-datosNumericos);
-}
-
-.texto_datos img {
-    width: 20px;
-    height: 20px;
-}
-
-.texto_datosVisibles img {
-    width: 20px;
-    height: 20px;
-}
-
-.novedades_secundarias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.75rem;
-}
-
-.novedad_secundaria {
-    width: 15.125rem;
-    height: 11.9375rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-
-    color: #F3F3F3;
-}
-
-.novedad_secundaria1 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/MCU-Banner-1.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria2 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/07/Netflix.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria3 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria4 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/La-Pistola-Desnuda-Banner-1.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria5 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/08/David-Corenswet-Superman-Traje-Banner-1.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria6 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/03/BHQMVU4L5JA3FEYOIVOYMAE6ZA.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria7 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria8 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/10/Kierkan-Shipka-in-Totally-Killer-16.jpg?resize=446%2C248&ssl=1");
-}
-
-.novedad_secundaria::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.novedad_secundaria:hover .texto_datos {
-    display: flex;
-}
-
-.secundaria_texto {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5px 10px;
-    gap: 8px;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-}
-
-.secundaria_texto h2 {
-    font: var(--fuente-tituloSecundarias);
-}
-
-.valores_secundarias {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.valor_comentarios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.secundaria_textoDatos {
-    height: 20px;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.secundaria_textoDatos p {
-    font: var(--fuente-datos);
-}
-
-.secundaria_textoDatos span {
-    font: var(--fuente-datosDestacados);
-}
-
-.secundaria_textoDatos h3 {
-    font: var(--fuente-datosNumericos);
-}
-
-.secundaria_textoDatos img {
-    width: 20px;
-    height: 20px;
-}
-
-/* --------------------------- Comentadas --------------------------- */
-
-.comentadas {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--margen-seccion);
-    gap: 30px;
-}
-
-.section_titulo {
-    width: 818px;
-    height: auto;
-    margin-bottom: 50px;
-    background-color: var(--color-acento);
-    color: var(--color-blanco);
-}
-
-.section_titulo h2 {
     padding: .75rem 2rem;
+    margin-bottom: 3.125rem;
+    background-color: var(--color-acento);
+}
+
+.seccion_titulo h2 {
     font: var(--fuente-tituloSeccion);
 }
 
-.comentada {
-    display: flex;
-    justify-content: center;
-    color: #F3F3F3;
+.texto_blanco {
+    color: var(--color-blanco);
 }
 
-.mas_comentada {
-    min-width: 641px;
-    height: 20.4375rem;
-    background-image: url("https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp");
+.destacadas {
+    display: flex;
+    justify-content: center;
+}
+
+.novedades_destacadas {
+    gap: 1.6875rem;
+}
+
+.valorada_destacada {
+    gap: 30px;
+}
+
+.card {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
 
-.mas_comentada::before {
+.card::before {
     content: " ";
     position: absolute;
     background: var(--color-negro-gradient);
@@ -503,21 +263,34 @@ body {
     z-index: 1;
 }
 
-.comentada_texto {
+.card:hover .oculto{
     display: flex;
-    flex-direction: column;
-    padding: 5px 20px;
-    gap: 8px;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
 }
 
-.comentada_texto h2 {
-    font: var(--fuente-tituloDestacada);
+.novedad_destacada {
+    width: 31.9375rem; 
+    height: 23.8125rem;
 }
 
-.comentario {
+.mas_comentada {
+    height: 20.4375rem; 
+    min-width: 641px;
+    background-image: url("https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp");
+}
+
+.mas_valorada {
+    height: 20.4375rem; 
+    width: 614px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1");
+}
+
+.entrevista_destacada {
+    height: 20.4375rem; 
+    min-width: 641px;
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
+}
+
+.comentario, .bajada {
     width: 409px;
     max-height: 327px;
     background-color: var(--color-negro);
@@ -525,304 +298,25 @@ body {
     flex-direction: column;
     padding: 20px;
     gap: 12px;
-}
-
-.comentario_perfil {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.comentario_perfil img {
-    width: 45px;
-    height: 45px;
 }
 
 .comentario_perfil h2 {
     font: var(--fuente-user);
 }
-
-.comentario p {
-    font: var(--fuente-comentario);
-}
-
-.comentadas_secundarias {
+.comentario_perfil, .entrevistador {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.comentada_secundaria {
-    min-width: 333px;
-    height: 230px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.comentada_secundaria1 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/01/Harry-Potter-1-Banner-1.jpg?resize=1200%2C720&ssl=1");
-}
-
-.comentada_secundaria2 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/09/Alien-Earth-Banner-1.jpg?resize=1200%2C720&ssl=1");
-}
-
-.comentada_secundaria3 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/02/Daredevil-Born-Again-Banner-1.jpg?resize=1200%2C720&ssl=1");
-}
-
-.comentada_secundaria::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.comentada_textoSecundaria {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-
-    color: var(--color-blanco);
-}
-
-.comentada_textoSecundaria h2 {
-    font: var(--fuente-tituloSecundarias);
-}
-
-.datos_comentadaSecundaria {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mostrar_comentarios {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.mostrar_comentarios img {
-    width: 30px;
-    height: 30px;
-}
-
-.mostrar_comentarios p {
-    font: var(--fuente-datosNumericos);
-}
-
-/* --------------------------- valoradas --------------------------- */
-
-.valoradas {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--margen-seccion);
-    gap: 30px;
-}
-
-.valorada {
-    display: flex;
-    justify-content: center;
-    color: #F3F3F3;
-    gap: 30px;
-}
-
-.mas_valorada {
-    width: 614px;
-    height: 327px;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.mas_valorada::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.valorada_texto {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-}
-
-.valorada_texto h2 {
-    font: var(--fuente-tituloDestacada);
-}
-
-.valoradas_secundarias {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.valorada_secundaria {
-    min-width: 409px;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.valorada_secundaria1 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/Nostalgia-Deadpool-Wolverine.jpg?resize=1200%2C720&ssl=1");
-}
-
-.valorada_secundaria2 {
-        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Los-Juegos-del-Hambre-Amanecer-en-la-Cosecha-Logo-Banner-1.jpg?resize=1200%2C720&ssl=1");
-}
-
-.valorada_secundaria::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.valorada_textoSecundaria {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-
-    color: var(--color-blanco);
-}
-
-.valorada_textoSecundaria h2 {
-    font: var(--fuente-tituloSecundarias);
-}
-
-.datos_valoradaSecundaria {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.datos_valoradaSecundaria p {
-    font: var(--fuente-datos);
-}
-
-.datos_valoradaSecundaria span {
-    font: var(--fuente-datosDestacados);
-}
-
-.valorada_terciaria1 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/06/Five-Nights-at-Freddys.jpg?resize=800%2C450&ssl=1");
-}
-
-.valorada_terciaria2 {
-    background-image: url("https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp");
-}
-
-.valorada_terciaria3 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1");
-}
-
-/* --------------------------- Entrevistas --------------------------- */
-
-.entrevistas {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--margen-seccion);
-    gap: 30px;
-}
-
-.entrevista {
-    display: flex;
-    justify-content: center;
-    color: #F3F3F3;
-}
-
-.entrevista_destacada {
-    min-width: 641px;
-    height: 20.4375rem;
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=800%2C600&ssl=1");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.entrevista_destacada::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.entrevista_texto {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-}
-
-.entrevista_texto h2 {
-    font: var(--fuente-tituloDestacada);
-}
-
-.bajada {
-    width: 409px;
-    max-height: 327px;
-    background-color: var(--color-negro);
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    padding: 20px;
-    gap: 12px;
+    align-items: center;
+    gap: 13px;
 }
 
-.bajada h2 {
-    font: var(--fuente-tituloDestacada);
+.comentario_perfil img, .entrevista_perfil img {
+    width: 45px;
+    height: 45px;
 }
 
-.bajada p {
+.comentario p, .bajada p {
     font: var(--fuente-comentario);
-}
-
-.bajada span {
-    font: var(--fuente-comentarioDestacado);
 }
 
 .entrevista_perfil {
@@ -831,16 +325,12 @@ body {
     gap: 10px;
 }
 
-.entrevistador {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 13px;
+.bajada h2 {
+    font: var(--fuente-tituloDestacada);
 }
 
-.entrevista_perfil img {
-    width: 45px;
-    height: 45px;
+.bajada span {
+    font: var(--fuente-comentarioDestacado);
 }
 
 .datos_bajada {
@@ -863,6 +353,44 @@ body {
     height:20px;
 }
 
+.novedades_secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.novedad_secundaria {
+    width: 15.125rem;
+    height: 11.9375rem;
+}
+
+.comentadas_secundarias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.comentada_secundaria {
+    min-width: 333px;
+    height: 230px;
+}
+
+.valoradas_secundarias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.valorada_secundaria {
+    min-width: 409px;
+    height: 150px;
+}
+
 .entrevistas_secundarias {
     display: flex;
     justify-content: center;
@@ -873,10 +401,152 @@ body {
 .entrevista_secundaria {
     min-width: 333px;
     height: 230px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    bottom: .5rem;
+}
+
+.destacada_textos {
+    padding: .3125rem 1.25rem;
+}
+
+.destacada_textos h2 {
+    font: var(--fuente-tituloDestacada);
+}
+
+.secundaria_texto {
+    padding: 2.5px 10px;
+}
+
+.secundaria_texto h2 {
+    font: var(--fuente-tituloSecundarias);
+}
+
+.texto_datos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oculto {
+    display: none;
+}
+
+.texto_datos p {
+    font: var(--fuente-datos);
+}
+
+.texto_datos span {
+    font: var(--fuente-datosDestacados);
+}
+
+.texto_datos h3 {
+    font: var(--fuente-datosNumericos);
+}
+
+.valores_secundarias {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+}
+
+.datos_valor-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .175rem;
+}
+
+.datos img {
+    width: 20px;
+    height: 20px;
+}
+
+/* --------------------------- Carga de imagenes a cards --------------------------- */
+/* ------------------------- (las destacadas siguen arriba) ------------------------- */
+
+.destacada1 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2022/04/mindhunter.jpg?resize=446%2C248&ssl=1");
+} 
+
+.destacada2 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/Jeremy-Allen-White-Bruce-Springsteen-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria1 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/MCU-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria2 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/07/Netflix.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria3 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria4 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/La-Pistola-Desnuda-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria5 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/David-Corenswet-Superman-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.novedad_secundaria6 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/03/BHQMVU4L5JA3FEYOIVOYMAE6ZA.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria7 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1");
+}
+
+.novedad_secundaria8 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/10/Kierkan-Shipka-in-Totally-Killer-16.jpg?resize=446%2C248&ssl=1");
+}
+
+.comentada_secundaria1 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/01/Harry-Potter-1-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.comentada_secundaria2 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/09/Alien-Earth-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.comentada_secundaria3 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/02/Daredevil-Born-Again-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.valorada_secundaria1 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/Nostalgia-Deadpool-Wolverine.jpg?resize=1200%2C720&ssl=1");
+}
+
+.valorada_secundaria2 {
+        background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Los-Juegos-del-Hambre-Amanecer-en-la-Cosecha-Logo-Banner-1.jpg?resize=1200%2C720&ssl=1");
+}
+
+.valorada_terciaria1 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/06/Five-Nights-at-Freddys.jpg?resize=800%2C450&ssl=1");
+}
+
+.valorada_terciaria2 {
+    background-image: url("https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp");
+}
+
+.valorada_terciaria3 {
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1");
 }
 
 .entrevista_secundaria1 {
@@ -891,58 +561,13 @@ body {
     background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Corazon_Delator_n_01_23_34_00-R-1-scaled.jpg?resize=1200%2C800&ssl=1");
 }
 
-.entrevista_secundaria::before {
-    content: " ";
-    position: absolute;
-    background: var(--color-negro-gradient);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.entrevista_textoSecundaria {
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
-    position: absolute;
-    bottom: .5rem;
-    z-index: 2;
-
-    color: var(--color-blanco);
-}
-
-.entrevista_textoSecundaria h2 {
-    font: var(--fuente-tituloSecundarias);
-}
-
-.datos_entrevistaSecundaria {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.datos_entrevistaSecundaria p {
-    font: var(--fuente-datos);
-}
-
-.datos_entrevistaSecundaria span {
-    font: var(--fuente-datosDestacados);
-}
-
 /* --------------------------- Footer --------------------------- */
 
 .footer {
+    height: 11rem;
+    margin-top: 5.1875rem;
+    padding: 0 2.5rem;
     background-color: var(--color-negro);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 176px;
-    margin-top: 83px;
-    padding: 0 40px;
 }
 
 .contacto {

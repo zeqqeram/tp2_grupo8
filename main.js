@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="comentada_textoSecundaria">
           <h2>${titulo}</h2>
           <div class="datos_comentadaSecundaria">
-            <p>por <span>Maca Reynolds</span> - Jun. 15 del 2025</p>
+            <p  class="texto_blanco">por <span>Maca Reynolds</span> - Jun. 15 del 2025</p>
             <div class="mostrar_comentarios">
               <img src="./img/valor.png" alt="icono valoración">
-              <p>${valor}</p>
+              <p  class="texto_blanco">${valor}</p>
               <img src="./img/comentario.png" alt="icono comentarios">
-              <p>${comentarios}</p>
+              <p  class="texto_blanco">${comentarios}</p>
             </div>
           </div>
         </div>
@@ -83,8 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Función para marcar en pantalla los desbordes Round 2
+/*
+ Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 
+ Estuve revisando con Js y también linea a linea por posibles desbordamientos y no encontré ninguno. 
+ Además al actualizar la página ya con dev tools abierto el scroll desaparece. 
+ Investigue al respecto y solo encontre una posible causa: la recarga automatica de la web, tengo una posible solucion con un script de js, 
+ pero aun no fue aplicada porque no lo consideré prioritario. 
+ Como dije la web no tiene desbordamientos en una pc de 1440px en realidad, lo comprobe en un monitor fisico. 
+ Además dicho scroll no muestra una barra de scrolleo ni nada solo permite arrastrar en devtools 
+ y desaparece al volver a cargar el link en el navgador con devtolls ya abierto a 1440px.
+*/
 
+// Función para marcar en pantalla los desbordes Round 2
 (function () {
   var slice = Array.prototype.slice;
 
