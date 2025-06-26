@@ -1,7 +1,7 @@
 // Función para reemplazar el desbordamiento de texto por puntos suspensivos
 // Resuelto con js para evitar incompatibilidades de webkit
 
-function suspensivos(selector) { 
+function suspensivos(selector) {
   const elementos = document.querySelectorAll(selector);
   if (!elementos.length) return;
 
@@ -54,32 +54,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
       //const autor = card.querySelector('.autor span')?.textContent || 'Sin autor';
       //const fecha = card.querySelector('.fecha')?.textContent || 'Sin fecha';
-      const valor = card.querySelectorAll('.valor_comentarios h3')[0]?.textContent || '-';
-      const comentarios = card.querySelectorAll('.valor_comentarios h3')[1]?.textContent || '0';
-
+      const valor = card.querySelectorAll('.datos_valor-comentario h3')[0]?.textContent || '-';
+      const comentarios = card.querySelectorAll('.datos_valor-comentario h3')[1]?.textContent || '0';
       const background = getComputedStyle(card).backgroundImage;
-      const imagenURL = background.replace(/^url["']?/, '').replace(/["']?$/, '');
-
+      const imagenURL = background.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
       const nuevaCard = document.createElement('div');
-      nuevaCard.className = 'comentada_secundaria';
-      nuevaCard.style.backgroundImage = `url('${imagenURL}')`;
+
+      nuevaCard.className = 'comentada_secundaria card';
+      nuevaCard.style.backgroundImage = `url("${imagenURL}")`;
       nuevaCard.innerHTML = `
-        <div class="comentada_textoSecundaria">
-          <h2>${titulo}</h2>
-          <div class="datos_comentadaSecundaria">
-            <p  class="texto_blanco">por <span>Maca Reynolds</span> - Jun. 15 del 2025</p>
-            <div class="mostrar_comentarios">
-              <img src="./img/valor.png" alt="icono valoración">
-              <p  class="texto_blanco">${valor}</p>
-              <img src="./img/comentario.png" alt="icono comentarios">
-              <p  class="texto_blanco">${comentarios}</p>
+        <div class="textos secundaria_texto">
+          <h2 class="texto_blanco textoEditable" data-altura="60">${titulo}</h2>
+            <div class="texto_datos">
+              <div class="valores_secundarias">
+                <p  class="texto_blanco">por <span>Maca Reynolds</span></p>
+                <div class="datos">
+                  <p class="texto_blanco">jun. 3 de 2025</p>
+                  <div class="datos_valor-comentario">
+                    <h3 class="texto_blanco">${valor}</h3>
+                    <img src="./img/valor.png" alt="icono de valoración">
+                  </div>
+                  <div class="datos_valor-comentario">
+                    <h3 class="texto_blanco">${comentarios}</h3>
+                    <img src="./img/comentario.png" alt="Icono de comentarios">
+                  </div>
+                </div>
             </div>
-          </div>
-        </div>
-      `;
+        </div> `;
+console.log(nuevaCard.querySelector('.secundaria_texto'));
       contenedorResultados.appendChild(nuevaCard);
     });
-    console-log(imagenURL)
   });
 });
 
