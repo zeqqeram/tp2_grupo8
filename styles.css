@@ -155,7 +155,7 @@ body {
     text-align: center;
 }
 
-.tab a {
+.tab_a, .subtab a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -174,13 +174,36 @@ body {
     color: var(--color-acento);
 }
 
+.subtabs {
+    width: 152px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--color-negro);
+    padding: 10px;
+    gap: 10px;
+    top: 100%;
+    list-style: none;
+}
+
+.subtab a {
+color: var(--color-blanco);
+justify-content: flex-start;
+}
+
+.tab:hover .subtabs{
+    display: flex;
+}
+
 .buscador {
     width: 9.1875rem;
-    height: 3.375;
+    height: 3.25rem;
     position: relative;
 }
 
 .buscador_input {
+    position: absolute;
+    right: 0;
     width: 100%;
     height: 100%;
     padding: .625rem;
@@ -192,14 +215,23 @@ body {
     border-bottom: none;
 }
 
-.buscador_input::placeholder{
+.buscador_input::placeholder {
     color: var(--color-negro);
+}
+
+.buscador_input:focus {
+    width: 18.375rem;
+    outline: none;
+}
+
+.buscador_input:focus::placeholder {
+    color: transparent;
 }
 
 .buscador_icono {
     position: absolute;
     right: .625rem;
-    bottom: .3125rem;
+    top: 10px;
     width: 2.1875rem;
     height: 2.1875rem;
     pointer-events: none;
