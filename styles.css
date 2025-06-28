@@ -624,3 +624,60 @@ justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1.6rem;
 }
+
+/* --------------------------- Sección peliculas cards dinámicas --------------------------- */
+
+.lista_peliculas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pelicula_card {
+    width: 950px;
+    height: 247px;
+    display: flex;
+    gap: 46px;
+    align-items: center;
+}
+
+.textos_card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.texto_titular {
+    font: var(--fuente-tituloDestacada);
+}
+
+.bajada_card {
+    font: var(--fuente-comentario);
+}
+
+.datos_card {
+    display: flex;
+    height: 49px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.datos_card p {
+    font: var(--fuente-datos);
+}
+
+.datos_card h3 {
+    font: var(--fuente-datosNumericos);
+}
+
+.datos_card span {
+    font: var(--fuente-datosDestacados)
+}
+
+.imagen_card {
+    width: 320px;
+    height: 213px;
+}
+

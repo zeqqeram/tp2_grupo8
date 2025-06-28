@@ -24,9 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   suspensivos('.textoEditable');
 });
 
-//Sistema de filtrado para el buscador con elementos estáticos
-//Buscador te odio 
-//Versión replicando la card secundaria de comentarios
+//Sistema de filtrado para el buscador con elementos estáticos replicando la card secundaria de comentarios
 
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('buscador');
@@ -86,6 +84,67 @@ console.log(nuevaCard.querySelector('.secundaria_texto'));
     });
   });
 });
+
+//Requisición GET y conexión a server
+
+const API_URL = "https://685f48b2c55df675589dfaab.mockapi.io/peliculas";
+
+//Requisición GET
+
+async function getPeliculas() {
+    try {
+        const response = await fetch(API_URL);
+
+        if (!response.ok) throw new Error("No se pudo obtener los productos");
+        console.log("Productos obtenidos: ", response);
+
+        return await response.json ();
+    } catch (error) {
+        console.error("Error en GET: ", error);
+        throw error;
+    }
+}
+
+async function mostrarPeliculas() {
+    const listaPeliculas = document.querySelector(".lista_novedades");
+    listaPeliculas.innerHTML = "";
+
+    try {
+        const peliculas = await getPeliculas();
+
+        peliculas.forEach((pelicula) => {
+            const peliculaCard = document.createElement("div");
+            peliculaCard.classList.add("pelicula_card");
+            peliculaCard.innerHTML = `
+            <img class="imagen_card" src="${pelicula.url}" alt="Foto del producto">
+            <div class="textos_card">
+              <h2 class="texto_titular">${pelicula.titular}</h2>
+              <p class="bajada_card"> Acá deberia agregar bajada al server </p>
+                <div class="datos_card">
+                  <p>por <span>${pelicula.redactor}</span></p>
+                  <p>${pelicula.fecha}</p>
+                  <div class="datos_valor-comentario">
+                    <h3>${pelicula.valoracion}</h3>
+                    <img src="../../img/valor.png" alt="icono de valoración">
+                  </div>
+                  <div class="datos_valor-comentario">
+                    <h3>${pelicula.comentarios}</h3>
+                    <img src="../../img/comentario.png" alt="Icono de comentarios">
+                  </div>
+                </div>
+            </div>
+            `;
+            listaPeliculas.appendChild(peliculaCard);
+        });
+    }
+    catch (error) {
+        console.error("Error al mostrar los productos: ", error);
+    }
+
+}
+
+console.log("La pagina se ha cargado, cargando productos...")
+mostrarPeliculas();
 
 /*
  Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 

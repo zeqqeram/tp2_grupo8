@@ -1,0 +1,193 @@
+{
+    "peliculas": [
+        {
+            "id": 1,
+            "titular": "¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2022/04/mindhunter.jpg?resize=1150%2C645&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 18 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 2,
+            "titular": "JEREMY ALLEN WHITE SE CONVIERTE EN BRUCE SPRINGSTEEN",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/Jeremy-Allen-White-Bruce-Springsteen-Banner-1.jpg?resize=446%2C248&ssl=1",
+            "redactor": "redactor/a",
+            "fecha": "mes. dia de año",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 3,
+            "titular": "JAMES GUNN SOBRE LOS PROBLEMAS DE MARVEL STUDIOS",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/MCU-Banner-1.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 17 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 4,
+            "titular": "NETFLIX PREPARA OTRO REBOOT DE UN CLÁSICO",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/07/Netflix.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 18 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 5,
+            "titular": "THE SANDMAN REVELA EL TRAILER DE SU 2DA TEMPORADA",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/04/The-Sandman-Banner-2.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 17 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 6,
+            "titular": "LIAM NEESON PROTAGONIZA LA PISTOLA DESNUDA",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/La-Pistola-Desnuda-Banner-1.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 16 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 7,
+            "titular": "JAMES GUNN RESPONDE A LA CAMPAÑA ANTI-SUPERMAN",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/08/David-Corenswet-Superman-Traje-Banner-1.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 16 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 8,
+            "titular": "LOS 5 MEJORES FAN FILMS COMIQUEROS",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/03/BHQMVU4L5JA3FEYOIVOYMAE6ZA.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Jessi Bladdy",
+            "fecha": "Jun. 15 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 9,
+            "titular": "SÉ LO QUE HICIERON EL VERANO PASADO REVELA NUEVO TRAILER",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/03/Se-lo-Que-Hicieron-el-Verano-Pasado-Banner-1.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 17 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 10,
+            "titular": "DÍA DEL PADRE: 5 PELÍCULAS PARA CELEBRARLO",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/10/Kierkan-Shipka-in-Totally-Killer-16.jpg?resize=446%2C248&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 15 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 11,
+            "titular": "STRANGER THINGS: PRIMEROS DETALLES DE LA SERIE ANIMADA",
+            "url": "https://culturageek.com.ar/wp-content/uploads/2025/04/Strangers-Things-serie-animada-culturageek.com_.ar_.webp",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 11 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 12,
+            "titular": "HARRY POTTER: TODO LO QUE SABEMOS DE LA SERIE",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/01/Harry-Potter-1-Banner-1.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 9 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 13,
+            "titular": "ALIEN: EARTH REVELA SU TRAILER COMPLETO",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/09/Alien-Earth-Banner-1.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 5 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 14,
+            "titular": "LOS PLANES ORIGINALES DE DAREDEVIL: BORN AGAIN",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/02/Daredevil-Born-Again-Banner-1.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 9 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 15,
+            "titular": "RYAN REYNOLDS TRABAJA EN EL REGRESO DE DEADPOOL",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2024/07/Nostalgia-Deadpool-Wolverine.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "May. 5 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 16,
+            "titular": "LOS JUEGOS DEL HAMBRE: DETALLES DE SU NUEVA PRECUELA",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Los-Juegos-del-Hambre-Amanecer-en-la-Cosecha-Logo-Banner-1.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "May. 22 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 17,
+            "titular": "FIVE NIGHTS AT FREDDY'S ANTICIPA SU SECUELA",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2023/06/Five-Nights-at-Freddys.jpg?resize=800%2C450&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Abr. 3 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 18,
+            "titular": "TELÉFONO NEGRO 2: TRAILER Y ENTREVISTA A SCOTT DERRICKSON",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/06/El-Telefono-Negro-1-Banner-1.jpg?resize=1200%2C720&ssl=1",
+            "redactor": "Maca Reynolds",
+            "fecha": "Jun. 1 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 19,
+            "titular": "DESTINO FINAL: LAZOS DE SANGRE - PARTE 2",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Captura-de-Pantalla-2025-05-16-a-las-10.20.06.png?resize=1200%2C646&ssl=1",
+            "redactor": "Luagosta",
+            "fecha": "May. 16 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 20,
+            "titular": "DESTINO FINAL: LAZOS DE SANGRE - PARTE 1",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Captura-de-Pantalla-2025-05-15-a-las-10.28.52.png?resize=1200%2C604&ssl=1",
+            "redactor": "Luagosta",
+            "fecha": "May. 16 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        },
+        {
+            "id": 21,
+            "titular": "CORAZÓN DELATOR: HABLAMOS CON BENJAMÍN VICUÑA Y JULIETA DÍAZ",
+            "url": "https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/Corazon_Delator_n_01_23_34_00-R-1-scaled.jpg?resize=1200%2C800&ssl=1",
+            "redactor": "Luagosta",
+            "fecha": "May. 29 de 2025",
+            "valoracion": 1.1,
+            "comentarios": 1
+        }
+    ]
+}
