@@ -119,7 +119,7 @@ async function mostrarPeliculas() {
             <img class="imagen_card" src="${pelicula.url}" alt="Foto del producto">
             <div class="textos_card">
               <h2 class="texto_titular">${pelicula.titular}</h2>
-              <p class="bajada_card"> Acá deberia agregar bajada al server </p>
+              <p class="bajada_card">${pelicula.bajada}</p>
                 <div class="datos_card">
                   <p>por <span>${pelicula.redactor}</span></p>
                   <p>${pelicula.fecha}</p>
