@@ -32,8 +32,9 @@
                     rel="noopener" aria-label="Youtube"></a>
             </div>
             <div class="perfil_contenedor">
-                <img class="perfil" src="./img/perfil.png" alt="Icono de perfil">
-                <p class="texto_blanco">LOGIN</p>
+                <a class="perfil_a" href="./pages/perfil.html">
+                    <span>LOGIN</span>
+                </a>
             </div>
         </div>
     </header>
@@ -43,14 +44,17 @@
     <nav class="nav">
         <ul class="tabs">
             <li class="tab">
-                <a class="tab_a" href="./pages/peliculas/peliculas.html">PELÍCULAS</a>
+                <a class="tab_a tab_active" href="">INICIO</a>
+            </li>
+            <li class="tab">
+                <a class="tab_a" href="./pages/peliculas.html">PELÍCULAS</a>
                 <ul class="subtabs">
                     <li class="subtab"><a href="#">GÉNEROS</a></li>
                     <li class="subtab"><a href="#">EN CARTELERA</a></li>
                 </ul>
             </li>
             <li class="tab">
-                <a class="tab_a" href="Series">SERIES</a>
+                <a class="tab_a" href="./pages/peliculas.html">SERIES</a>
                 <ul class="subtabs">
                     <li class="subtab"><a href="#">DISNEY+</a></li>
                     <li class="subtab"><a href="#">PARAMOUNT+</a></li>
@@ -60,7 +64,7 @@
                 </ul>
             </li>
             <li class="tab">
-                <a class="tab_a" href="Videojuegos">VIDEOJUEGOS</a>
+                <a class="tab_a" href="./pages/peliculas.html">VIDEOJUEGOS</a>
                 <ul class="subtabs">
                     <li class="subtab"><a href="#">CLÁSICOS</a></li>
                     <li class="subtab"><a href="#">INDIES</a></li>
@@ -68,7 +72,7 @@
                 </ul>
             </li>
             <li class="tab">
-                <a class="tab_a" href="Comics">CÓMICS</a>
+                <a class="tab_a" href="./pages/peliculas.html">CÓMICS</a>
                 <ul class="subtabs">
                     <li class="subtab"><a href="#">MARVEL</a></li>
                     <li class="subtab"><a href="#">DC</a></li>
@@ -731,7 +735,7 @@
     <!-- -------------------- Conexión a Javascript -------------------- -->
 
     <script src="main.js"></script>
-
+    
 </body>
 
 </html>

@@ -122,9 +122,31 @@ body {
     font: var(--fuente-logIn);
 }
 
-.perfil {
+.perfil_a {
     width: 3.125rem;
     height: 3.125rem;
+    position: relative;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/perfil.png);
+}
+
+.perfil_a span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--color-blanco);
+}
+
+.perfil_a:hover {
+    background-image: url(./img/perfil-active.png);
+    color: var(--color-acento);
+}
+
+.perfil_active {
+    background-image: url(./img/perfil-active.png);
 }
 
 /* --------------------------- Nav --------------------------- */
@@ -189,6 +211,10 @@ body {
 .subtab a {
 color: var(--color-blanco);
 justify-content: flex-start;
+}
+
+.subtab a:hover {
+    color: var(--color-acento);
 }
 
 .tab:hover .subtabs{
@@ -502,7 +528,7 @@ justify-content: flex-start;
     gap: .175rem;
 }
 
-.datos img {
+.datos img, .icon_datos {
     width: 20px;
     height: 20px;
 }
@@ -665,6 +691,10 @@ justify-content: flex-start;
     font: var(--fuente-tituloDestacada);
 }
 
+.texto_titular:hover {
+    color: var(--color-acento);
+}
+
 .bajada_card {
     font: var(--fuente-comentario);
 }
@@ -693,3 +723,105 @@ justify-content: flex-start;
     height: 213px;
 }
 
+/* --------------------------- Iniciar sesión --------------------------- */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login_dato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font: var(--fuente-tituloDestacada);
+    gap: .5rem;
+}
+
+.login_input {
+    width: 996px;
+    height: 50px;
+}
+
+.login_otros {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: flex-start;
+}
+
+.login_boton {
+    width: 586px;
+    height: 69px;
+    background-color: var(--color-acento);
+    font: var(--fuente-tituloSeccion);
+    color: var(--color-blanco);
+    border: none;
+}
+
+.login span {
+    color: var(--color-acento);
+    font: var(--fuente-datosDestacados);
+}
+
+.login p {
+    color: var(--color-negro);
+    font: var(--fuente-datosDestacados);
+}
+
+/* --------------------------- Mi perfil --------------------------- */
+.perfil_info {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--margen-seccion);
+}
+
+.perfil_foto {
+    width: 232px;
+    height: 232px;
+}
+
+.perfil_datos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.dato_usuario {
+    width: 587px;
+    height: 56px;
+    outline: 1px solid var(--color-acento);
+}
+
+.mis_comentarios {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--margen-seccion);
+}
+
+.coments {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.coment {
+    width: 1050px;
+    height: 200px;
+}
+
+.coment_datos {
+    display: flex;
+}
+
+.coment_foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

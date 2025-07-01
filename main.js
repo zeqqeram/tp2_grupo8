@@ -1,6 +1,4 @@
-// Función para reemplazar el desbordamiento de texto por puntos suspensivos
-// Resuelto con js para evitar incompatibilidades de webkit
-
+// Función para reemplazar el desbordamiento de texto por puntos suspensivos. Resuelto con js para evitar incompatibilidades de webkit
 function suspensivos(selector) {
   const elementos = document.querySelectorAll(selector);
   if (!elementos.length) return;
@@ -19,48 +17,44 @@ function suspensivos(selector) {
     }
   });
 }
+suspensivos('.textoEditable');
 
-document.addEventListener('DOMContentLoaded', () => {
-  suspensivos('.textoEditable');
-});
 
 //Sistema de filtrado para el buscador con elementos estáticos replicando la card secundaria de comentarios
+const input = document.getElementById('buscador');
+const cards = document.querySelectorAll('.card');
+const contenido = document.getElementById('contenido_original');
+const contenedorResultados = document.getElementById('contenedor_filtrados');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const input = document.getElementById('buscador');
-  const cards = document.querySelectorAll('.card');
-  const contenido = document.getElementById('contenido_original');
-  const contenedorResultados = document.getElementById('contenedor_filtrados');
+input.addEventListener('input', () => {
+  const valorBuscado = input.value.toLowerCase().trim();
 
-  input.addEventListener('input', () => {
-    const valorBuscado = input.value.toLowerCase().trim();
-
-    if (valorBuscado === '') {
-      contenido.style.display = '';
-      contenedorResultados.innerHTML = '';
-      contenedorResultados.style.display = 'none';
-      return;
-    }
-
-    contenido.style.display = 'none';
+  if (valorBuscado === '') {
+    contenido.style.display = '';
     contenedorResultados.innerHTML = '';
-    contenedorResultados.style.display = 'flex';
+    contenedorResultados.style.display = 'none';
+    return;
+  }
 
-    cards.forEach(card => {
-      const titulo = card.querySelector('h1, h2, h3')?.textContent || '';
-      if (!titulo.toLowerCase().includes(valorBuscado)) return;
+  contenido.style.display = 'none';
+  contenedorResultados.innerHTML = '';
+  contenedorResultados.style.display = 'flex';
 
-      //const autor = card.querySelector('.autor span')?.textContent || 'Sin autor';
-      //const fecha = card.querySelector('.fecha')?.textContent || 'Sin fecha';
-      const valor = card.querySelectorAll('.datos_valor-comentario h3')[0]?.textContent || '-';
-      const comentarios = card.querySelectorAll('.datos_valor-comentario h3')[1]?.textContent || '0';
-      const background = getComputedStyle(card).backgroundImage;
-      const imagenURL = background.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-      const nuevaCard = document.createElement('div');
+  cards.forEach(card => {
+    const titulo = card.querySelector('h1, h2, h3')?.textContent || '';
+    if (!titulo.toLowerCase().includes(valorBuscado)) return;
 
-      nuevaCard.className = 'comentada_secundaria card';
-      nuevaCard.style.backgroundImage = `url("${imagenURL}")`;
-      nuevaCard.innerHTML = `
+    //const autor = card.querySelector('.autor span')?.textContent || 'Sin autor';
+    //const fecha = card.querySelector('.fecha')?.textContent || 'Sin fecha';
+    const valor = card.querySelectorAll('.datos_valor-comentario h3')[0]?.textContent || '-';
+    const comentarios = card.querySelectorAll('.datos_valor-comentario h3')[1]?.textContent || '0';
+    const background = getComputedStyle(card).backgroundImage;
+    const imagenURL = background.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+    const nuevaCard = document.createElement('div');
+
+    nuevaCard.className = 'comentada_secundaria card';
+    nuevaCard.style.backgroundImage = `url("${imagenURL}")`;
+    nuevaCard.innerHTML = `
         <div class="textos secundaria_texto">
           <h2 class="texto_blanco textoEditable" data-altura="60">${titulo}</h2>
             <div class="texto_datos">
@@ -79,43 +73,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </div> `;
-console.log(nuevaCard.querySelector('.secundaria_texto'));
-      contenedorResultados.appendChild(nuevaCard);
-    });
+    console.log(nuevaCard.querySelector('.secundaria_texto'));
+    contenedorResultados.appendChild(nuevaCard);
   });
 });
 
-//Requisición GET y conexión a server
 
+//Conexión a server
 const API_URL = "https://685f48b2c55df675589dfaab.mockapi.io/peliculas";
 
+
 //Requisición GET
-
 async function getPeliculas() {
-    try {
-        const response = await fetch(API_URL);
+  try {
+    const response = await fetch(API_URL);
 
-        if (!response.ok) throw new Error("No se pudo obtener los productos");
-        console.log("Productos obtenidos: ", response);
+    if (!response.ok) throw new Error("No se pudo obtener los productos");
+    console.log("Productos obtenidos: ", response);
 
-        return await response.json ();
-    } catch (error) {
-        console.error("Error en GET: ", error);
-        throw error;
-    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error en GET: ", error);
+    throw error;
+  }
 }
 
+//Muestra las películas si estamos en la sección
 async function mostrarPeliculas() {
-    const listaPeliculas = document.querySelector(".lista_novedades");
-    listaPeliculas.innerHTML = "";
+  const listaPeliculas = document.querySelector(".lista_novedades");
+  listaPeliculas.innerHTML = "";
 
-    try {
-        const peliculas = await getPeliculas();
+  try {
+    const peliculas = await getPeliculas();
 
-        peliculas.forEach((pelicula) => {
-            const peliculaCard = document.createElement("div");
-            peliculaCard.classList.add("pelicula_card");
-            peliculaCard.innerHTML = `
+    peliculas.forEach((pelicula) => {
+      const peliculaCard = document.createElement("div");
+      peliculaCard.classList.add("pelicula_card");
+      peliculaCard.innerHTML = `
             <img class="imagen_card" src="${pelicula.url}" alt="Foto del producto">
             <div class="textos_card">
               <h2 class="texto_titular">${pelicula.titular}</h2>
@@ -125,26 +119,69 @@ async function mostrarPeliculas() {
                   <p>${pelicula.fecha}</p>
                   <div class="datos_valor-comentario">
                     <h3>${pelicula.valoracion}</h3>
-                    <img src="../../img/valor.png" alt="icono de valoración">
+                    <img class="icon_datos" src="../../img/valor_negro.png" alt="icono de valoración">
                   </div>
                   <div class="datos_valor-comentario">
                     <h3>${pelicula.comentarios}</h3>
-                    <img src="../../img/comentario.png" alt="Icono de comentarios">
+                    <img class="icon_datos" src="../../img/comentario_negro.png" alt="Icono de comentarios">
                   </div>
                 </div>
             </div>
             `;
-            listaPeliculas.appendChild(peliculaCard);
-        });
-    }
-    catch (error) {
-        console.error("Error al mostrar los productos: ", error);
-    }
-
+      listaPeliculas.appendChild(peliculaCard);
+    });
+  }
+  catch (error) {
+    console.error("Error al mostrar los productos: ", error);
+  }
 }
 
-console.log("La pagina se ha cargado, cargando productos...")
-mostrarPeliculas();
+const listaPeliculas = document.querySelector(".lista_novedades");
+if (listaPeliculas) {
+  console.log("Cargando peliculas...");
+  mostrarPeliculas();
+};
+
+
+// Loggearse
+const formLogIn = document.getElementById('login');
+
+if (formLogIn) {
+  formLogIn.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const perfil = document.querySelector('.perfil_a');
+    const name = document.querySelector('input[name="usuario"]');
+    const miPerfil = document.querySelector('.mi_perfil');
+    const seccionForm = document.querySelector('.seccion_form');
+    const datoUsuario = document.querySelector('.dato_usuario');
+
+    if (perfil && name && miPerfil && datoUsuario) {
+      perfil.classList.add('perfil_active');
+      miPerfil.classList.remove('oculto');
+
+      const span = perfil.querySelector('span');
+      const p = datoUsuario.querySelector('p');
+
+      if (span && p) {
+        span.textContent = name.value;
+        p.textContent = name.value;
+      }
+
+      seccionForm.style.display='none';
+    }
+
+    console.log("Ingreso al perfil y se sumó la clase active");
+  });
+}
+
+
+
+
+
+
+
+
 
 /*
  Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 
