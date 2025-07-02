@@ -110,6 +110,7 @@ async function mostrarPeliculas() {
       const peliculaCard = document.createElement("div");
       peliculaCard.classList.add("pelicula_card");
       peliculaCard.innerHTML = `
+      <a class="link_nota" href='./nota.html'>
             <img class="imagen_card" src="${pelicula.url}" alt="Foto del producto">
             <div class="textos_card">
               <h2 class="texto_titular">${pelicula.titular}</h2>
@@ -127,6 +128,7 @@ async function mostrarPeliculas() {
                   </div>
                 </div>
             </div>
+            </a>
             `;
       listaPeliculas.appendChild(peliculaCard);
     });

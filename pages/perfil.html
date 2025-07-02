@@ -101,19 +101,25 @@
                 <h2 class="texto_blanco">INGRESAR</h2>
             </div>
             <form class="login" id="login">
-                <div class="login_dato">
-                    <label for="usuario">NOMBRE DE USUARIO</label>
-                    <input type="text" name="usuario" placeholder="..." id="usuario" class="login_input" required>
+                <div class="form_datos">
+                    <div class="login_datos">
+                        <div class="login_dato">
+                            <label for="usuario">NOMBRE DE USUARIO</label>
+                            <input type="text" name="usuario" placeholder="..." id="usuario" class="login_input"
+                                required>
+                        </div>
+                        <div class="login_dato">
+                            <label for="contrasenia">CONTRASEÑA</label>
+                            <input type="password" name="contrasenia" placeholder="..." id="contrasenia"
+                                class="login_input" required>
+                        </div>
+                    </div>
+                    <div class="login_otros">
+                        <p>¿TODAVÍA NO SOS PARTE DE NUESTRA COMUNIDAD? <span>RESGISTRATE</span></p>
+                        <p><span>¿OLVIDASTE TU CONTRASEÑA?</span></p>
+                    </div>
                 </div>
-                <div class="login_dato">
-                    <label for="contrasenia">CONTRASEÑA</label>
-                    <input type="password" name="contrasenia" placeholder="..." id="contrasenia" class="login_input"
-                        required>
-                </div>
-                <div class="login_otros">
-                    <p>¿TODAVÍA NO SOS PARTE DE NUESTRA COMUNIDAD? <span>RESGISTRATE</span></p>
-                    <p><span>¿OLVIDASTE TU CONTRASEÑA?</span></p>
-                </div>
+
                 <button type="submit" class="login_boton">INGRESAR</button>
             </form>
         </section>
@@ -152,48 +158,115 @@
                     </h2>
                 </div>
                 <div class="tabs_contenedor">
-                    <ul class="tabs">
-                        <li class="tab tab_active">DESTACADOS</li>
-                        <li class="tab">RECIENTES</li>
+                    <ul class="tabs tabs_coments">
+                        <li class="tab tab_coments tab_active">DESTACADOS</li>
+                        <li class="tab tab_coments">RECIENTES</li>
                     </ul>
                 </div>
+
                 <div class="coments">
                     <div class="coment">
-                        <div class="coment_datos">
-                            <img class="coment_foto" src="../img/foto_perfil.png" alt="">
-                            <p><span>Mati...</span></p>
-                            <p>May. 04 de 2025</p>
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>Mati...</span></p>
+                                    <p>May. 04 de 2025</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe
+                                    corrupti
+                                    unde
+                                    vel
+                                    iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi
+                                    tempora
+                                    eos.
+                                    Vitae.
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>4</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>24</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe corrupti unde
-                            vel
-                            iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi tempora eos.
-                            Vitae.</p>
-                        <button>RESPONDER</button>
                     </div>
                     <div class="coment">
-                        <div class="coment_datos">
-                            <img class="coment_foto" src="../img/foto_perfil.png" alt="">
-                            <p><span>Mati...</span></p>
-                            <p>Abr. 25 de 2025</p>
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>Mati...</span></p>
+                                    <p>Abr. 25 de 2025</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe
+                                    corrupti
+                                    unde
+                                    vel
+                                    iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi
+                                    tempora
+                                    eos.
+                                    Vitae.
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>4</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>11</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe corrupti unde
-                            vel
-                            iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi tempora eos.
-                            Vitae.</p>
-                        <button>RESPONDER</button>
                     </div>
                     <div class="coment">
-                        <div class="coment_datos">
-                            <img class="coment_foto" src="../img/foto_perfil.png" alt="">
-                            <p><span>Mati...</span></p>
-                            <p>Feb. 20 de 2025</p>
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>Mati...</span></p>
+                                    <p>Feb. 20 de 2025</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe
+                                    corrupti
+                                    unde
+                                    vel
+                                    iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi
+                                    tempora
+                                    eos.
+                                    Vitae.
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>3</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>27</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa saepe corrupti unde
-                            vel
-                            iure hic, laborum est illo nostrum eius, delectus ab libero vero nemo commodi tempora eos.
-                            Vitae.</p>
-                        <button>RESPONDER</button>
                     </div>
+                </div>
+                <div class="ver_mas">
+                    <button>VER MÁS</button>
                 </div>
             </div>
             <div class="notas_favoritas">
@@ -213,7 +286,8 @@
                             <p class="bajada_card">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 Exercitationem harum deleniti adipisci placeat dolor consectetur veritatis eaque
                                 labore voluptatum ipsum, distinctio dignissimos quas iure illo vitae officia
-                                reprehenderit molestiae repellendus.</p>
+                                reprehenderit molestiae repellendus.
+                            </p>
                             <div class="datos_card">
                                 <p>por <span>Jessi Bladdy</span></p>
                                 <p>Jun. 15 de 2025</p>
@@ -279,8 +353,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+                <div class="ver_mas">
+                    <button>VER MÁS</button>
                 </div>
         </section>
 
