@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cosa Cine - Peliículas</title>
+    <title>La Cosa Cine - Nota</title>
 
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,9 +19,7 @@
     <!-- -------------------- Header -------------------- -->
 
     <header class="header">
-        <a href="../../index.html">
-            <img class="logo" src="../../img/lacosalogo.png" alt="Logo de La cosa cine">
-        </a>
+        <img class="logo" src="../img/lacosalogo.png" alt="Logo de La cosa cine">
         <div class="links">
             <div class="redes_contenedor">
                 <a href="https://www.instagram.com/lacosacine/" class="icon ig" target="_blank" rel="noopener"
@@ -34,8 +32,9 @@
                     rel="noopener" aria-label="Youtube"></a>
             </div>
             <div class="perfil_contenedor">
-                <img class="perfil" src="../../img/perfil.png" alt="Icono de perfil">
-                <p class="texto_blanco">LOGIN</p>
+                <a class="perfil_a" href="./perfil.html">
+                    <span>LOGIN</span>
+                </a>
             </div>
         </div>
     </header>
@@ -81,7 +80,7 @@
         </ul>
         <div class="buscador">
             <input class="buscador_input" type="text" id="buscador" placeholder="BUSCAR">
-            <img class="buscador_icono" src="../../img/buscar.png" alt="Icono de lupa" class="buscar">
+            <img class="buscador_icono" src="../img/buscar.png" alt="Icono de lupa" class="buscar">
         </div>
     </nav>
 
@@ -90,249 +89,433 @@
     <main class="main">
         <div id="contenido_original">
             <section class="nota">
-                <!-- ¿Acá se van a renderizar las notas dinámicamente? Sería buen plan... -->
+                <!-- ¿Acá se van a renderizar la nota dinámicamente? Sería buen plan si da el tiempo... -->
                 <div class="seccion_titulo">
                     <h2 class="texto_blanco">5 PELÍCULAS ANIMADAS DE DISNEY QUE EL TIEMPO OLVIDÓ</h2>
                 </div>
-                <img src="https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/El-Caldero-Magico-Banner-1.jpg?resize=1200%2C720&ssl=1" alt="portada de la nota">
-                <div>
-                    <p>Por Jessi Blady</p>
-                    <p>Actualizado el 25 de Mayo de 2025</p>
+                <img class="nota_portada"
+                    src="https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/El-Caldero-Magico-Banner-1.jpg?resize=1200%2C720&ssl=1"
+                    alt="portada de la nota">
+                <div class="texto_datos nota_datos">
+                    <div class="datos">
+                        <img src="../img/equipo1.png" alt="">
+                        <p>Por
+                        <h3>Jessi Blady</h3>
+                        </p>
+                        <p>Actualizado el <span>25 de Mayo de 2025</span></p>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">#ANIMACIÓN</div>
+                        <div class="tag">#PELÍCULAS</div>
+                        <div class="tag">#DISNEY</div>
+                    </div>
                 </div>
                 <div class="contenido_nota">
-                    <p>
-                        El legado de Disney no sólo es significativo, sino enorme, por lo que hay algunas películas que
-                        se han perdido con el paso de los años.
-                    </p>
-                    <p>
-                        Lilo & Stitch (2025) es la última película animada de Disney que volvió a las salas de cine, un
-                        tanto modernizada, en versión de 'carne y hueso'. A diferencia de Blanca Nieves (Snow White,
-                        2025), el alienígena y su humana tienen todos los elementos para triunfar en la taquilla
-                        mundial, pero no podemos decir lo mismo de otras historias del estudio que, probablemente, nunca
-                        serán rescatadas para convertirse en remakes live action.
-                    </p>
-                    <p>
-                        ¿Por qué? Porque nadie las recuerda con cariño o, simplemente, nadie las recuerda. Hablamos de
-                        aventuras que se estrenaron en los períodos más oscuros de la compañía -durante la Segunda
-                        Guerra Mundial y post conflicto, la etapa tardía tras la muerte de Walt Disney, previo al
-                        'renacimiento' a finales de la década del ochenta-, que no lograron acceder al mote de 'clásico
-                        animado'.
-                    </p>
-                    <iframe width="500" height="281" src="https://www.youtube.com/embed/7WObSDdhO8E"
-                        title="The Black Cauldron - 1985 Theatrical Trailer (35mm 4K)" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <h2>
-                        EL CALDERO MÁGICO (THE BLACK CAULDRON, 1985)
-                    </h2>
-                    <p>
-                        Tras la muerte de Walt Disney en 1966, el estudio experimentó una época de “vacas flacas”,
-                        muchos
-                        cambios estructurales y poca producción de largometrajes animados. Hubo éxitos como El Libro de
-                        la
-                        Selva (The Jungle Book, 1967) y Los Aristogatos (The AristoCats, 1970), pero también fracasos
-                        rotundos
-                        como esta adaptación libre de los dos primeros volúmenes de Las Crónicas de Prydain (The
-                        Chronicles of
-                        Prydain), de Lloyd Alexander.
-                    </p>
-                    <p>
-                        Esta aventura épica tiene como protagonista al joven Tarón, quien junto a la princesa Eilonwy,
-                        Fflewddur
-                        Fflam y una extraña criatura llamada Gurgi tratarán de detener al malvado Rey del Mal, que no se
-                        detendrá ante nada para poner sus manos sobre el Caldero Mágico: un objeto místico que le dará
-                        el poder
-                        necesario para gobernar el mundo. Los temitas oscuros del film obligaron al ente regulador a
-                        convertirla
-                        en la primera historia animada con calificación PG (Parental Guidance); posiblemente, una de las
-                        razones
-                        por las cuales solo recaudó 21 millones de dólares -contra un presupuesto de 44 millones- y pasó
-                        al
-                        olvido como si nada.
-                    </p>
-                    <h2>
-                        MÚSICA MAESTRO (MAKE MINE MUSIC, 1946) / RITMO Y MELODÍA (MELODY TIME, 1948)
-                    </h2>
-                    <p>
-                        La postguerra trajo el ajuste y, tras varios fracasos inesperados como Bambi (1942), el estudio
-                        afrontó
-                        la crisis con estos rejuntes musicales denominados 'película paquete'. Como los cortos animados
-                        ya no
-                        pegaban entre la audiencia, Disney armó algunas historias a partir de varios segmentos
-                        (musicales o no)
-                        sin relación entre ellos, algo así como la versión menos ambiciosa de Fantasía (1940); otro
-                        bochorno
-                        taquillero para la compañía del ratón. Estas historias pasaron sin pena ni gloria, mientras el
-                        público
-                        prefería invertir su tiempo y dinero en clásicos como Blancanieves y los Siete Enanitos, que
-                        volvían a
-                        las salas en forma de reestreno; una modalidad que sacó a la compañía de más de un apuro
-                        económico.
-                    </p>
-                    <iframe width="500" height="281" src="https://www.youtube.com/embed/Eq8Wes4cC-w"
-                        title="Song of the South 1946 Trailer [digitally remastered]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <h2>
-                        CANCIÓN DEL SUR (SONG OF THE SOUTH, 1946)
-                    </h2>
-                    <p>
-                        Para que se den una idea, esta mezcla de animación y live action -de las primeras incursiones de
-                        Disney
-                        en esta técnica- basada en Las Historias del Tío Remus de Joel Chandler Harris, jamás se editó
-                        en ningún
-                        formato casero en los Estados Unidos, debido al 'controvertido' contenido racial de su
-                        argumento.
-                    </p>
-                    <p>
-                        Mientras que la Academia decidió premiar la canción “Zip-A-Dee-Doo-Dah” con una estatuilla
-                        dorada, el
-                        público no guarda el mejor de los recuerdos de los relatos del tío Remus ni del pequeño Johnny,
-                        quienes
-                        pasan sus días en una plantación del estado de Georgia. Claro, también hay conejos, zorros y
-                        osos
-                        animados, pero nada borra el olorcito anti abolicionista, a pesar de que se quiera demostrar lo
-                        contrario.
-                    </p>
-                    <iframe width="500" height="281" src="https://www.youtube.com/embed/QzsSLOoVaQI"
-                        title="Los Tres Caballeros ( 1944)  Tráiler Español Latino" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <h2>
-                        SALUDOS AMIGOS (1942) / LOS TRES CABALLEROS (1944)
-                    </h2>
-                    <p>
-                        A principios de la década del cuarenta, el mismísimo Walt y una extensa comitiva se dieron una
-                        vuelta
-                        por Argentina, Brasil, Chile y México, como parte de una misión diplomática encargada por el
-                        presidente
-                        estadounidense Franklin D. Roosevelt. La idea era conseguir aliados durante la Segunda Guerra
-                        Mundial,
-                        pero el director y empresario aprovechó el viaje para empaparse del folclore local e idear sus
-                        próximas
-                        películas animadas.
-                    </p>
-                    <p>
-                        Así surgieron Saludos Amigos y Los Tres Caballeros: una serie de aventuras cortas por tierras
-                        latinoamericanas, cargadas de estereotipos erróneos, que no consiguieron el favor del público,
-                        tal vez,
-                        por la mala representación de dichas culturas. Si somos sinceros, pocos films lograron brillar
-                        en épocas
-                        del conflicto bélico, pero estos “lugares exóticos” la pegaron menos que las princesas.
-                    </p>
-                    <iframe width="500" height="375" src="https://www.youtube.com/embed/UEG58HsLmMM"
-                        title="The Reluctant Dragon (1941) Trailer | Disney | Robert Benchley | Frances Gifford"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <h2>
-                        EL DRAGÓN CHIFLADO (THE RELUCTANT DRAGON, 1941)
-                    </h2>
-                    <p>
-                        Nadie se acuerda de esta simpática criatura, mucho menos de esta película que combina animación
-                        con
-                        acción real de una manera bastante desprolija. Básicamente, se trata de un tour por las
-                        instalaciones de
-                        los Walt Disney Studios en Burbank, California: el recorrido del comediante Robert Benchley,
-                        quien trata
-                        de contactarse con el mismísimo jefe para compartirle su propia idea para una aventura sobre un
-                        dragón
-                        bastante tímido.
-                    </p>
-                    <p>
-                        Mientras tanto, va cruzando camino con otros empleados de la compañía y aprende del proceso de
-                        animación. Obviamente, a nadie le interesó este pseudo documental cargado de autobombo… ni el
-                        pobre
-                        dragoncito, que nunca tuvo su continuación en la pantalla.
-                    </p>
-                    <button>COMPARTIR</button>
-                    <h3>Califica esta nota</h3>
-                    <div>
-                        <h3>COMENTARIOS</h3>
-                        <p>Deja tu comentario</p>
-                        <button>Comentar</button>
+                    <article class="textos_nota">
+                        <p>
+                            El legado de Disney no sólo es significativo, sino enorme, por lo que hay algunas películas
+                            que
+                            se han perdido con el paso de los años.
+                        </p>
+                        <p>
+                            Lilo & Stitch (2025) es la última película animada de Disney que volvió a las salas de cine,
+                            un
+                            tanto modernizada, en versión de 'carne y hueso'. A diferencia de Blanca Nieves (Snow White,
+                            2025), el alienígena y su humana tienen todos los elementos para triunfar en la taquilla
+                            mundial, pero no podemos decir lo mismo de otras historias del estudio que, probablemente,
+                            nunca
+                            serán rescatadas para convertirse en remakes live action.
+                        </p>
+                        <p>
+                            ¿Por qué? Porque nadie las recuerda con cariño o, simplemente, nadie las recuerda. Hablamos
+                            de
+                            aventuras que se estrenaron en los períodos más oscuros de la compañía -durante la Segunda
+                            Guerra Mundial y post conflicto, la etapa tardía tras la muerte de Walt Disney, previo al
+                            'renacimiento' a finales de la década del ochenta-, que no lograron acceder al mote de
+                            'clásico
+                            animado'.
+                        </p>
+                        <div class="video_nota">
+                            <iframe width="500" height="281" src="https://www.youtube.com/embed/7WObSDdhO8E"
+                                title="The Black Cauldron - 1985 Theatrical Trailer (35mm 4K)" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h2>
+                            EL CALDERO MÁGICO (THE BLACK CAULDRON, 1985)
+                        </h2>
+                        <p>
+                            Tras la muerte de Walt Disney en 1966, el estudio experimentó una época de “vacas flacas”,
+                            muchos
+                            cambios estructurales y poca producción de largometrajes animados. Hubo éxitos como El Libro
+                            de
+                            la
+                            Selva (The Jungle Book, 1967) y Los Aristogatos (The AristoCats, 1970), pero también
+                            fracasos
+                            rotundos
+                            como esta adaptación libre de los dos primeros volúmenes de Las Crónicas de Prydain (The
+                            Chronicles of
+                            Prydain), de Lloyd Alexander.
+                        </p>
+                        <p>
+                            Esta aventura épica tiene como protagonista al joven Tarón, quien junto a la princesa
+                            Eilonwy,
+                            Fflewddur
+                            Fflam y una extraña criatura llamada Gurgi tratarán de detener al malvado Rey del Mal, que
+                            no se
+                            detendrá ante nada para poner sus manos sobre el Caldero Mágico: un objeto místico que le
+                            dará
+                            el poder
+                            necesario para gobernar el mundo. Los temitas oscuros del film obligaron al ente regulador a
+                            convertirla
+                            en la primera historia animada con calificación PG (Parental Guidance); posiblemente, una de
+                            las
+                            razones
+                            por las cuales solo recaudó 21 millones de dólares -contra un presupuesto de 44 millones- y
+                            pasó
+                            al
+                            olvido como si nada.
+                        </p>
+                        <h2>
+                            MÚSICA MAESTRO (MAKE MINE MUSIC, 1946) / RITMO Y MELODÍA (MELODY TIME, 1948)
+                        </h2>
+                        <p>
+                            La postguerra trajo el ajuste y, tras varios fracasos inesperados como Bambi (1942), el
+                            estudio
+                            afrontó
+                            la crisis con estos rejuntes musicales denominados 'película paquete'. Como los cortos
+                            animados
+                            ya no
+                            pegaban entre la audiencia, Disney armó algunas historias a partir de varios segmentos
+                            (musicales o no)
+                            sin relación entre ellos, algo así como la versión menos ambiciosa de Fantasía (1940); otro
+                            bochorno
+                            taquillero para la compañía del ratón. Estas historias pasaron sin pena ni gloria, mientras
+                            el
+                            público
+                            prefería invertir su tiempo y dinero en clásicos como Blancanieves y los Siete Enanitos, que
+                            volvían a
+                            las salas en forma de reestreno; una modalidad que sacó a la compañía de más de un apuro
+                            económico.
+                        </p>
+                        <div class="video_nota">
+                            <iframe width="500" height="281" src="https://www.youtube.com/embed/Eq8Wes4cC-w"
+                                title="Song of the South 1946 Trailer [digitally remastered]" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h2>
+                            CANCIÓN DEL SUR (SONG OF THE SOUTH, 1946)
+                        </h2>
+                        <p>
+                            Para que se den una idea, esta mezcla de animación y live action -de las primeras
+                            incursiones de
+                            Disney
+                            en esta técnica- basada en Las Historias del Tío Remus de Joel Chandler Harris, jamás se
+                            editó
+                            en ningún
+                            formato casero en los Estados Unidos, debido al 'controvertido' contenido racial de su
+                            argumento.
+                        </p>
+                        <p>
+                            Mientras que la Academia decidió premiar la canción “Zip-A-Dee-Doo-Dah” con una estatuilla
+                            dorada, el
+                            público no guarda el mejor de los recuerdos de los relatos del tío Remus ni del pequeño
+                            Johnny,
+                            quienes
+                            pasan sus días en una plantación del estado de Georgia. Claro, también hay conejos, zorros y
+                            osos
+                            animados, pero nada borra el olorcito anti abolicionista, a pesar de que se quiera demostrar
+                            lo
+                            contrario.
+                        </p>
+                        <div class="video_nota">
+                            <iframe width="500" height="281" src="https://www.youtube.com/embed/QzsSLOoVaQI"
+                                title="Los Tres Caballeros ( 1944)  Tráiler Español Latino" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h2>
+                            SALUDOS AMIGOS (1942) / LOS TRES CABALLEROS (1944)
+                        </h2>
+                        <p>
+                            A principios de la década del cuarenta, el mismísimo Walt y una extensa comitiva se dieron
+                            una
+                            vuelta
+                            por Argentina, Brasil, Chile y México, como parte de una misión diplomática encargada por el
+                            presidente
+                            estadounidense Franklin D. Roosevelt. La idea era conseguir aliados durante la Segunda
+                            Guerra
+                            Mundial,
+                            pero el director y empresario aprovechó el viaje para empaparse del folclore local e idear
+                            sus
+                            próximas
+                            películas animadas.
+                        </p>
+                        <p>
+                            Así surgieron Saludos Amigos y Los Tres Caballeros: una serie de aventuras cortas por
+                            tierras
+                            latinoamericanas, cargadas de estereotipos erróneos, que no consiguieron el favor del
+                            público,
+                            tal vez,
+                            por la mala representación de dichas culturas. Si somos sinceros, pocos films lograron
+                            brillar
+                            en épocas
+                            del conflicto bélico, pero estos “lugares exóticos” la pegaron menos que las princesas.
+                        </p>
+                        <div class="video_nota">
+                            <iframe width="500" height="375" src="https://www.youtube.com/embed/UEG58HsLmMM"
+                                title="The Reluctant Dragon (1941) Trailer | Disney | Robert Benchley | Frances Gifford"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h2>
+                            EL DRAGÓN CHIFLADO (THE RELUCTANT DRAGON, 1941)
+                        </h2>
+                        <p>
+                            Nadie se acuerda de esta simpática criatura, mucho menos de esta película que combina
+                            animación
+                            con
+                            acción real de una manera bastante desprolija. Básicamente, se trata de un tour por las
+                            instalaciones de
+                            los Walt Disney Studios en Burbank, California: el recorrido del comediante Robert Benchley,
+                            quien trata
+                            de contactarse con el mismísimo jefe para compartirle su propia idea para una aventura sobre
+                            un
+                            dragón
+                            bastante tímido.
+                        </p>
+                        <p>
+                            Mientras tanto, va cruzando camino con otros empleados de la compañía y aprende del proceso
+                            de
+                            animación. Obviamente, a nadie le interesó este pseudo documental cargado de autobombo… ni
+                            el
+                            pobre
+                            dragoncito, que nunca tuvo su continuación en la pantalla.
+                        </p>
+                    </article>
+                    <aside>
+                        <div class="subseccion">
+                            <h2 class="texto_blanco">TE PUEDE INTERESAR</h2>
+                        </div>
+                        <div class="lista_peliculas">
+                            <a href="#">
+                                <div class="comentada_secundaria comentada_secundaria2 card">
+                                    <div class="textos secundaria_texto">
+                                        <h2 class="texto_blanco textoEditable" data-altura="60">ALIEN: EARTH REVELA SU
+                                            TRAILER
+                                            COMPLETO</h2>
+                                        <div class="texto_datos">
+                                            <div class="valores_secundarias">
+                                                <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                                <div class="datos">
+                                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">4.3</h3>
+                                                        <img src="../img/valor.png" alt="icono de valoración">
+                                                    </div>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">24</h3>
+                                                        <img src="../img/comentario.png" alt="Icono de comentarios">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="comentada_secundaria comentada_secundaria2 card">
+                                    <div class="textos secundaria_texto">
+                                        <h2 class="texto_blanco textoEditable" data-altura="60">ALIEN: EARTH REVELA SU
+                                            TRAILER
+                                            COMPLETO</h2>
+                                        <div class="texto_datos">
+                                            <div class="valores_secundarias">
+                                                <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                                <div class="datos">
+                                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">4.3</h3>
+                                                        <img src="../img/valor.png" alt="icono de valoración">
+                                                    </div>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">24</h3>
+                                                        <img src="../img/comentario.png" alt="Icono de comentarios">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="comentada_secundaria comentada_secundaria2 card">
+                                    <div class="textos secundaria_texto">
+                                        <h2 class="texto_blanco textoEditable" data-altura="60">ALIEN: EARTH REVELA SU
+                                            TRAILER
+                                            COMPLETO</h2>
+                                        <div class="texto_datos">
+                                            <div class="valores_secundarias">
+                                                <p class="texto_blanco">por <span>Maca Reynolds</span></p>
+                                                <div class="datos">
+                                                    <p class="texto_blanco">jun. 3 de 2025</p>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">4.3</h3>
+                                                        <img src="../img/valor.png" alt="icono de valoración">
+                                                    </div>
+                                                    <div class="datos_valor-comentario">
+                                                        <h3 class="texto_blanco">24</h3>
+                                                        <img src="../img/comentario.png" alt="Icono de comentarios">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="compartir_contenedor">
+                    <button class="compartir">COMPARTIR</button>
+                </div>
+                <div class="calificacion">
+                    <p>Califica esta nota</p>
+                    <p class="puntaje">0</p>
+                    <div class="estrellas">
+                        <img src="../img/valor_negro.png" alt="" class="estrella">
+                        <img src="../img/valor_negro.png" alt="" class="estrella">
+                        <img src="../img/valor_negro.png" alt="" class="estrella">
+                        <img src="../img/valor_negro.png" alt="" class="estrella">
+                        <img src="../img/valor_negro.png" alt="" class="estrella">
                     </div>
-                    <div>
-                        <h3> 3 comentarios</h3>
-                        <!-- Acá podria tambien traer los comentarios del servidor-->
-                        <div>
-                            <div class="datos_comentarioUser">
-                                VamoGimansia_21 — Jun. 16 de 2025
+                </div>
+                <div class="seccion_titulo">
+                    <h2 class="texto_blanco">COMENTARIOS</h2>
+                </div>
+                <div class="coments">
+                    <div class="comentar_contenedor">
+                        <div class="coment">
+                            <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                            <div class="input_contenedor">
+                                <input class="input_comentar" type="text" placeholder="Escribe tu comentario">
+                                <button class="comentar">COMENTAR</button>
                             </div>
-                            <p>
-                                Yo re veo a Disney sacando un remaster de El Caldero Mágico en unos años, suena a una re
-                                flasheada pero
-                                ya hicieron el remaster de Blanca Nieves, no puedo estar muy errada jajajajajajajajaja.
-                            </p>
-                            <button>RESPONDER</button>
-                            <div>
-                                <div>
-                                    <img src="../../img/valor_negro.png" alt="">
-                                    <p>3/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acá podria tambien traer los comentarios del servidor-->
+                <div class="tabs_contenedor">
+                    <ul class="tabs tabs_coments">
+                        <li class="tab tab_coments tab_active">DESTACADOS</li>
+                        <li class="tab tab_coments">RECIENTES</li>
+                    </ul>
+                    <h3> 3 comentarios</h3>
+                </div>
+
+                <div class="coments">
+                    <div class="coment">
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>VamoGimansia_21</span></p>
+                                    <p>Jun. 16 de 2025</p>
                                 </div>
-                                <div>
-                                    <img src="../../img/comentario_negro.png" alt="">
-                                    <p>
-                                        0
-                                    </p>
+                                <p>Yo re veo a Disney sacando un remaster de El Caldero Mágico en unos años, suena a
+                                    una re
+                                    flasheada pero
+                                    ya hicieron el remaster de Blanca Nieves, no puedo estar muy errada
+                                    jajajajajajajajaja.
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>4</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>24</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="datos_comentarioUser">
-                                Galalaland — Jun. 15 de 2025
-                            </div>
-                            <p>
-                                nooo amigo que nostalgia, me acuerdo que el caldero mágico me daba un re miedo de
-                                chiquita pero igual me
-                                gustaba jajasjjasj. me parece buenisimo que traigan estas pelis más olvidadas, se
-                                merecen más amor </p>
-                            <button>RESPONDER</button>
-                            <div>
-                                <div>
-                                    <img src="../../img/valor_negro.png" alt="">
-                                    <p>0/5</p>
+                    </div>
+                    <div class="coment">
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>Galalaland</span></p>
+                                    <p>Jun. 15 de 2025</p>
                                 </div>
-                                <div>
-                                    <img src="../../img/comentario_negro.png" alt="">
-                                    <p>
-                                        0
-                                    </p>
+                                <p>nooo amigo que nostalgia, me acuerdo que el caldero mágico me daba un re miedo de
+                                    chiquita pero igual me
+                                    gustaba jajasjjasj. me parece buenisimo que traigan estas pelis más olvidadas,
+                                    se
+                                    merecen más amor
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>4</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>11</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="datos_comentarioUser">
-                                McCreeLover_52 — Jun. 15 de 2025
-                            </div>
-                            <p>
-                                Donde está Atlantis??!?!! Esa peli es la definición
-                                de cine y está bastante olvidada. El diseño, la historia, todo estaba buenisimo y
-                                estaría zarpado
-                                verla en Live-Action. Buena nota igual, me dieron ganas de maratonear todas las pelis de
-                                Disney
-                                jajajajajsj
-                            </p>
-                            <button>RESPONDER</button>
-                            <div>
-                                <div>
-                                    <img src="../../img/valor_negro.png" alt="">
-                                    <p>2/5</p>
+                    </div>
+                    <div class="coment">
+                        <img class="coment_foto" src="../img/foto_perfil.png" alt="">
+                        <div class="coment_contenido">
+                            <div class="no_accionables">
+                                <div class="coment_datos">
+                                    <p><span>McCreeLover_52</span></p>
+                                    <p>Jun. 15 de 2025</p>
                                 </div>
-                                <div>
-                                    <img src="../../img/comentario_negro.png" alt="">
-                                    <p>
-                                        0
-                                    </p>
+                                <p>Donde está Atlantis??!?!! Esa peli es la definición
+                                    de cine y está bastante olvidada. El diseño, la historia, todo estaba buenisimo
+                                    y
+                                    estaría zarpado
+                                    verla en Live-Action. Buena nota igual, me dieron ganas de maratonear todas las
+                                    pelis de
+                                    Disney
+                                    jajajajajsj
+                                </p>
+                            </div>
+                            <div class="acciones">
+                                <button class="responder">RESPONDER</button>
+                                <div class="datos">
+                                    <div class="datos_valor-comentario">
+                                        <h3>3</h3>
+                                        <img src="../img/valor_negro.png" alt="icono de valoración">
+                                    </div>
+                                    <div class="datos_valor-comentario">
+                                        <h3>27</h3>
+                                        <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+        </div>
+        </section>
         </div>
     </main>
 
