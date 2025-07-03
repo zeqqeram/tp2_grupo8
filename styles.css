@@ -384,7 +384,9 @@ body {
 }
 
 .comentario p,
-.bajada p {
+.bajada p,
+.coment_datos p,
+.no_accionables p {
     font: var(--fuente-comentario);
 }
 
@@ -398,7 +400,8 @@ body {
     font: var(--fuente-tituloDestacada);
 }
 
-.bajada span {
+.bajada span,
+.coment_datos span {
     font: var(--fuente-comentarioDestacado);
 }
 
@@ -510,7 +513,7 @@ body {
     font: var(--fuente-datos);
 }
 
-.texto_datos span {
+.texto_datos span, .datos_valor-comentario h3 {
     font: var(--fuente-datosDestacados);
 }
 
@@ -919,7 +922,7 @@ body {
 
 .responder,
 .compartir {
-    background-color: none;
+    background: transparent;
     border: none;
     color: var(--color-acento);
     font: var(--fuente-nav);
@@ -938,6 +941,7 @@ body {
 
 .tags {
     display: flex;
+    justify-content: center;
     gap: 10px;
     padding: 20px 0;
 }
@@ -1058,4 +1062,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.tags_favoritos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: var(--margen-seccion);
+}
+
+.tags_perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boton_tag {
+    background: var(--color-acento);
+    color: var(--color-blanco);
 }
