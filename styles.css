@@ -513,7 +513,7 @@ body {
     font: var(--fuente-datos);
 }
 
-.texto_datos span, .datos_valor-comentario h3 {
+.texto_datos span, .datos_valor-comentario h3, .tabs_contenedor h3 {
     font: var(--fuente-datosDestacados);
 }
 
@@ -1039,6 +1039,7 @@ body {
     padding: 30px;
     height: 211px;
     align-items: center;
+    border: none;
 }
 
 .input_comentar {
@@ -1047,6 +1048,8 @@ body {
     padding: 30px;
     height: 211px;
     position: absolute;
+    border: none;
+    font: var(--fuente-comentario);
 }
 
 .comentar {
@@ -1062,6 +1065,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+}
+
+.input_comentar::placeholder {
+    color: var(--color-negro);
+    font: var(--fuente-comentario);
 }
 
 .tags_favoritos {
@@ -1080,4 +1089,9 @@ body {
 .boton_tag {
     background: var(--color-acento);
     color: var(--color-blanco);
+}
+
+.tabs_contenedor {
+    display: flex;
+    justify-content: space-between;
 }
