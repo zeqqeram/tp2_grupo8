@@ -551,16 +551,17 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
-}
-
-.ver_mas button {
-    display: flex;
     font: var(--fuente-nav);
-    padding: 10px 20px;
-    border: none;
 }
 
-.ver_mas button:hover {
+.ver_mas a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font: var(--fuente-nav);
+    color: var(--color-negro);
+}
+.ver_mas a:hover {
     color: var(--color-acento);
 }
 
@@ -568,7 +569,7 @@ body {
 /* ------------------------- (las destacadas siguen arriba) ------------------------- */
 
 .destacada1 {
-    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2022/04/mindhunter.jpg?resize=446%2C248&ssl=1");
+    background-image: url("https://i0.wp.com/www.lacosacine.com/wp-content/uploads/2025/05/El-Caldero-Magico-Banner-1.jpg?resize=1200%2C720&ssl=1");
 }
 
 .destacada2 {
@@ -998,6 +999,11 @@ body {
     justify-content: flex-end;
 }
 
+.compartir img, .ver_mas img {
+    width: 20px;
+    height: 20px;
+}
+
 .calificacion {
     display: flex;
     flex-direction: column;
@@ -1095,3 +1101,4 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
