@@ -177,12 +177,44 @@ if (formLogIn) {
   });
 }
 
+// Titulos dinamicos
+const tituloSeccion = document.getElementById("titulo-seccion");
+
+if (tituloSeccion) {
+const params = new URLSearchParams(window.location.search);
+const categoria = params.get("categoria");
+
+if (categoria) {
+  const tituloVisible = {
+    noticias: "NOTICIAS",
+    entrevistas: "ENTREVISTAS",
+  };
+
+  tituloSeccion.textContent = tituloVisible[categoria] || "Películas";
+} else {
+  tituloSeccion.textContent = "Películas";
+}
+}
 
 
+// Aparicion del modal al tocar el boton comentar
 
+document.getElementById("comentar").addEventListener("click", function() {
+  document.getElementById("modal-seccion").style.display = "flex";
+});
 
+// Cerrar el modal al tocar la x
+document.querySelector(".cancelar").addEventListener("click", function() {
+  document.getElementById("modal-seccion").style.display = "none";
+});
 
-
+// Cerrar el modal si se hace click en el layout
+window.addEventListener("click", function(event) {
+  const modal = document.getElementById("modal-seccion");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
 
 
 /*

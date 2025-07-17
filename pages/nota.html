@@ -22,7 +22,7 @@
         <a href="../index.html">
             <img class="logo" src="../img/lacosalogo.png" alt="Logo de La cosa cine">
         </a>
-                <div class="links">
+        <div class="links">
             <div class="redes_contenedor">
                 <a href="https://www.instagram.com/lacosacine/" class="icon ig" target="_blank" rel="noopener"
                     aria-label="Instagram"></a>
@@ -387,20 +387,42 @@
                         </div>
                     </aside>
                 </div>
-                <div class="compartir_contenedor">
-                    <button class="compartir">COMPARTIR <img src="../img/compartir.png" alt=""></button>
-                </div>
-                <div class="calificacion">
-                    <p>Califica esta nota</p>
-                    <p class="puntaje">0</p>
-                    <div class="estrellas">
-                        <img src="../img/valor_negro.png" alt="" class="estrella">
-                        <img src="../img/valor_negro.png" alt="" class="estrella">
-                        <img src="../img/valor_negro.png" alt="" class="estrella">
-                        <img src="../img/valor_negro.png" alt="" class="estrella">
-                        <img src="../img/valor_negro.png" alt="" class="estrella">
+                <section class="feedback">
+                    <div class="calificacion">
+                        <h3>
+                            4.5
+                        </h3>
+                        <div class="calificaciones">
+                            <div class="estrellas">
+                                <img src="../img/valor_negro.png" alt="" class="estrella estrella_grande">
+                                <img src="../img/valor_negro.png" alt="" class="estrella estrella_grande">
+                                <img src="../img/valor_negro.png" alt="" class="estrella estrella_grande">
+                                <img src="../img/valor_negro.png" alt="" class="estrella estrella_grande">
+                                <img src="../img/valor_negro.png" alt="" class="estrella estrella_grande">
+                            </div>
+                            <p>
+                                45 CALIFICACIONES
+                            </p>                        </div>
                     </div>
-                </div>
+                    <div class="interacciones">
+                        <div class="calificar compartir">
+                            <p>CALIFICA ESTA NOTA</p>
+                            <div class="estrellas">
+                                <img src="../img/valor_negro.png" alt="" class="estrella">
+                                <img src="../img/valor_negro.png" alt="" class="estrella">
+                                <img src="../img/valor_negro.png" alt="" class="estrella">
+                                <img src="../img/valor_negro.png" alt="" class="estrella">
+                                <img src="../img/valor_negro.png" alt="" class="estrella">
+                            </div>
+                        </div>
+                        <div class="compartir_contenedor">
+                            <button class="compartir">AGREGAR A FAVORITOS <img src="../img/favorito.png"
+                                    alt=""></button>
+                            <button class="compartir">COMPARTIR <img src="../img/compartir.png" alt=""></button>
+                        </div>
+                    </div>
+                </section>
+
                 <div class="seccion_titulo">
                     <h2 class="texto_blanco">COMENTARIOS</h2>
                 </div>
@@ -409,8 +431,8 @@
                         <div class="coment">
                             <img class="coment_foto" src="../img/foto_perfil.png" alt="">
                             <div class="input_contenedor">
-                                <textarea class="input_comentar" placeholder="Escribe tu comentario"></textarea>
-                                <button class="comentar">COMENTAR</button>
+                                <textarea class="input_comentar" placeholder="Deja un comentario"></textarea>
+                                <button class="comentar" id="comentar">COMENTAR</button>
                             </div>
                         </div>
                     </div>
@@ -453,7 +475,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="coment">
                         <img class="coment_foto" src="../img/foto_comentario2.png" alt="">
@@ -523,9 +545,16 @@
         </section>
         </div>
     </main>
+    <section class="modal_seccion" id="modal-seccion">
+            <div class="modal" id="modal">
+            <button class="cancelar" id="cancelar">X</button>
+            <p> ¡ESPERA! NECESITAS INICIAR SESION PARA DEJAR TU COMENTARIO</p>
+            <a class="login_boton a_login" href="./perfil.html"> INICIAR SESIÓN</a>
+        </div>
+    </section>
+
 
     <!---------------------- Footer ---------------------->
-
     <footer class="footer">
         <div class="contacto">
             <p class="texto_blanco">AYUDA</p>
