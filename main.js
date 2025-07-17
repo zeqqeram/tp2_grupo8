@@ -145,77 +145,144 @@ if (listaPeliculas) {
 };
 
 
-// Loggearse
+// Verificación de user logueado
+const nombreUser = localStorage.getItem('user');
+const userLogeado = Boolean(nombreUser);
+
+if (userLogeado) {
+  const perfil = document.querySelector('.perfil_a');
+  const miPerfil = document.querySelector('.mi_perfil');
+  const seccionForm = document.querySelector('.seccion_form');
+  const datoUsuario = document.querySelector('.dato_usuario');
+
+  if (perfil && miPerfil && datoUsuario) {
+    perfil.classList.add('perfil_active');
+    miPerfil.classList.remove('oculto');
+
+    const span = perfil.querySelector('span');
+    const p = datoUsuario.querySelector('p');
+
+    if (span && p) {
+      span.textContent = nombreUser;
+      p.textContent = nombreUser;
+    }
+
+    if (seccionForm) {
+      seccionForm.style.display = 'none';
+    }
+  }
+}
+
+// Manejo del form de login
 const formLogIn = document.getElementById('login');
 
 if (formLogIn) {
   formLogIn.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const perfil = document.querySelector('.perfil_a');
-    const name = document.querySelector('input[name="usuario"]');
-    const miPerfil = document.querySelector('.mi_perfil');
-    const seccionForm = document.querySelector('.seccion_form');
-    const datoUsuario = document.querySelector('.dato_usuario');
+    if (formLogIn.checkValidity()) {
+      const nameInput = formLogIn.querySelector('input[name="usuario"]');
+      const name = nameInput.value.trim();
 
-    if (perfil && name && miPerfil && datoUsuario) {
-      perfil.classList.add('perfil_active');
-      miPerfil.classList.remove('oculto');
+      // Guardar nombre en localStorage
+      localStorage.setItem('user', name);
 
-      const span = perfil.querySelector('span');
-      const p = datoUsuario.querySelector('p');
+      const perfil = document.querySelector('.perfil_a');
+      const miPerfil = document.querySelector('.mi_perfil');
+      const seccionForm = document.querySelector('.seccion_form');
+      const datoUsuario = document.querySelector('.dato_usuario');
 
-      if (span && p) {
-        span.textContent = name.value;
-        p.textContent = name.value;
+      if (perfil && name && miPerfil && datoUsuario) {
+        perfil.classList.add('perfil_active');
+        miPerfil.classList.remove('oculto');
+
+        const span = perfil.querySelector('span');
+        const p = datoUsuario.querySelector('p');
+
+        if (span && p) {
+          span.textContent = name;
+          p.textContent = name;
+        }
+
+        if (seccionForm) {
+          seccionForm.style.display = 'none';
+        }
       }
 
-      seccionForm.style.display='none';
+      console.log("Ingreso al perfil y se sumó la clase active");
+    } else {
+      formLogIn.reportValidity();
     }
-
-    console.log("Ingreso al perfil y se sumó la clase active");
   });
 }
 
-// Titulos dinamicos
-const tituloSeccion = document.getElementById("titulo-seccion");
-
-if (tituloSeccion) {
-const params = new URLSearchParams(window.location.search);
-const categoria = params.get("categoria");
-
-if (categoria) {
-  const tituloVisible = {
-    noticias: "NOTICIAS",
-    entrevistas: "ENTREVISTAS",
-  };
-
-  tituloSeccion.textContent = tituloVisible[categoria] || "Películas";
-} else {
-  tituloSeccion.textContent = "Películas";
-}
-}
-
-
-// Aparicion del modal al tocar el boton comentar
-
-document.getElementById("comentar").addEventListener("click", function() {
-  document.getElementById("modal-seccion").style.display = "flex";
+// Aparecer y desaparecer el modal si no esta logeado
+document.getElementById("comentar")?.addEventListener("click", function () {
+  if (!userLogeado) {
+    document.getElementById("modal-seccion").style.display = "flex";
+  }
 });
 
-// Cerrar el modal al tocar la x
-document.querySelector(".cancelar").addEventListener("click", function() {
+document.querySelector(".cancelar")?.addEventListener("click", function () {
   document.getElementById("modal-seccion").style.display = "none";
 });
 
-// Cerrar el modal si se hace click en el layout
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   const modal = document.getElementById("modal-seccion");
   if (event.target === modal) {
     modal.style.display = "none";
   }
 });
 
+// Sistema de calificación del usuario
+const estrellas = document.querySelectorAll('.user_calificacion');
+let calificacionActual = 0;
+
+function actualizarEstrellas(valor, imagen) {
+  estrellas.forEach((estrella, index) => {
+    estrella.src = index < valor ? imagen : '../img/estrella_roja-unactive.png';
+  });
+}
+
+estrellas.forEach((estrella, i) => {
+  estrella.addEventListener('click', () => {
+    calificacionActual = i + 1;
+    actualizarEstrellas(calificacionActual, '../img/estrella_roja-active.png');
+
+    if (!userLogeado) {
+      document.getElementById("modal-seccion").style.display = "flex";
+    }
+  });
+
+  estrella.addEventListener('mouseover', () => {
+    const hoverIndex = i + 1;
+    actualizarEstrellas(hoverIndex, '../img/estrella_roja.png');
+  });
+
+  estrella.addEventListener('mouseout', () => {
+    actualizarEstrellas(calificacionActual, '../img/estrella_roja-unactive.png');
+  });
+});
+
+
+// Titulos dinamicos
+const tituloSeccion = document.getElementById("titulo-seccion");
+
+if (tituloSeccion) {
+  const params = new URLSearchParams(window.location.search);
+  const categoria = params.get("categoria");
+
+  if (categoria) {
+    const tituloVisible = {
+      noticias: "NOTICIAS",
+      entrevistas: "ENTREVISTAS",
+    };
+
+    tituloSeccion.textContent = tituloVisible[categoria] || "Películas";
+  } else {
+    tituloSeccion.textContent = "Películas";
+  }
+}
 
 /*
  Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 
