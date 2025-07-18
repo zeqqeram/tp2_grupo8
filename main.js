@@ -286,6 +286,7 @@ if (tituloSeccion) {
     const tituloVisible = {
       noticias: "NOTICIAS",
       entrevistas: "ENTREVISTAS",
+      favoritas: "TUS FAVORITAS",
     };
 
     tituloSeccion.textContent = tituloVisible[categoria] || "Películas";
@@ -339,6 +340,15 @@ contenedor.appendChild(nuevoComentario);
 document.getElementById("comentario_user").value = "";
 });
 
+//Nombre de user en comentarios de perfil
+
+if (nombreUser) {
+  const userName = document.querySelectorAll('.userName span');
+
+  userName.forEach(p => {
+    p.textContent = nombreUser;
+  });
+}
 
 /*
  Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 
