@@ -144,9 +144,19 @@ if (listaPeliculas) {
   mostrarPeliculas();
 };
 
+// Mostrar nombre de user en el nav si esta logeado
+const nombreUser = localStorage.getItem('user');
+
+if (nombreUser) {
+  const perfil = document.querySelector('.perfil_a');
+  const span = perfil?.querySelector('span');
+
+  if (span) {
+    span.textContent = nombreUser;
+  }
+}
 
 // Verificación de user logueado
-const nombreUser = localStorage.getItem('user');
 const userLogeado = Boolean(nombreUser);
 
 if (userLogeado) {
@@ -184,7 +194,7 @@ if (formLogIn) {
       const nameInput = formLogIn.querySelector('input[name="usuario"]');
       const name = nameInput.value.trim();
 
-      // Guardar nombre en localStorage
+      // Guardo el nombre en localStorage y actualizo los elementos
       localStorage.setItem('user', name);
 
       const perfil = document.querySelector('.perfil_a');
@@ -209,14 +219,14 @@ if (formLogIn) {
         }
       }
 
-      console.log("Ingreso al perfil y se sumó la clase active");
+      console.log("Usuario logeado correctamente");
     } else {
       formLogIn.reportValidity();
     }
   });
 }
 
-// Aparecer y desaparecer el modal si no esta logeado
+// manejo del modal si el user no esta logeado
 document.getElementById("comentar")?.addEventListener("click", function () {
   if (!userLogeado) {
     document.getElementById("modal-seccion").style.display = "flex";
@@ -283,6 +293,52 @@ if (tituloSeccion) {
     tituloSeccion.textContent = "Películas";
   }
 }
+
+//Manejo de nuevos comentarios 
+document.getElementById("comentar")?.addEventListener("click", function() {
+  const comentarioTexto = document.getElementById("comentario_user").value.trim();
+
+  if (comentarioTexto === "") {
+    console.log ("El comentario esta vacío");
+  }
+
+  const contenedor = document.getElementById("comentarios_nuevos");
+  const fecha = new Date();
+  const opciones = {month: 'short', day: 'numeric', year: 'numeric'};
+  const fechaFormateada = fecha.toLocaleDateString('es-AR', opciones);
+
+  const nuevoComentario = document.createElement("div");
+  nuevoComentario.classList.add("coment");
+  nuevoComentario.innerHTML = `
+  <img class="coment_foto" src="../img/foto_perfil.png" alt="Tu foto">
+  <div class="coment_contenido">
+    <div class="no_accionables">
+      <div class="coment_datos">
+        <p><span>${nombreUser}</span></p>
+        <p>${fechaFormateada}</p>
+      </div>
+      <p>${comentarioTexto}</p>
+    </div>
+    <div class="acciones">
+      <button class="responder">RESPONDER</button>
+      <div class="datos">
+        <div class="datos_valor-comentario">
+          <h3>0</h3>
+          <img src="../img/valor_negro.png" alt="icono de valoración">
+        </div>
+        <div class="datos_valor-comentario">
+          <h3>0</h3>
+          <img src="../img/comentario_negro.png" alt="Icono de comentarios">
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+contenedor.appendChild(nuevoComentario);
+document.getElementById("comentario_user").value = "";
+});
+
 
 /*
  Durante el desarrollo me encontre con un problema en dev tools de Chrome: se generaba un scroll fantasma cuando hacia el resposive a 1440px. 
